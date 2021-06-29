@@ -1,0 +1,10 @@
+term
+http://purl.obolibrary.org/obo/DOID_552
+http://purl.obolibrary.org/obo/DOID_2914
+http://purl.obolibrary.org/obo/DOID_9248
+http://purl.obolibrary.org/obo/DOID_9395
+http://purl.obolibrary.org/obo/DOID_11405
+http://purl.obolibrary.org/obo/DOID_12399
+http://purl.obolibrary.org/obo/DOID_12400
+http://purl.obolibrary.org/obo/DOID_12842
+http://purl.obolibrary.org/obo/DOID_12889

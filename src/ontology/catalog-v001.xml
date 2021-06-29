@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
+        <uri id="mondo_import" name="http://www.ebi.ac.uk/sira/imports/mondo_import.owl" uri="imports/mondo_import.owl"/>
+        <uri id="uberon_import" name="http://www.ebi.ac.uk/sira/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+        <uri id="hp_import" name="http://www.ebi.ac.uk/sira/imports/hp_import.owl" uri="imports/hp_import.owl"/>
+        <uri id="doid_import" name="http://www.ebi.ac.uk/sira/imports/doid_import.owl" uri="imports/doid_import.owl"/>
+        <uri id="efo_import" name="http://www.ebi.ac.uk/sira/imports/efo_import.owl" uri="imports/efo_import.owl"/>
+        <uri id="mp_import" name="http://www.ebi.ac.uk/sira/imports/mp_import.owl" uri="imports/mp_import.owl"/>
+        <uri id="ncit_import" name="http://www.ebi.ac.uk/sira/imports/ncit_import.owl" uri="imports/ncit_import.owl"/>
+        <uri id="subclasses_component" name="http://www.ebi.ac.uk/sira/components/subclasses.owl" uri="components/subclasses.owl"/>
+    </group>
+</catalog>
+

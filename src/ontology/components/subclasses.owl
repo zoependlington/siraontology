@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ebi.ac.uk/sira/components/subclasses.owl#"
+     xml:base="http://www.ebi.ac.uk/sira/components/subclasses.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.ebi.ac.uk/sira/components/subclasses.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_11405 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_11405">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_12399 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_12399">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_12400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_12400">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_2914 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_2914">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_552">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_9248">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9395 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_9395">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000969 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000969">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001787 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001787">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0002086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002086">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0002315 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002315">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0002863 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002863">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0004326 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0004326">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0020090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0020090">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0025040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0025040">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0030915 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0030915">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0100845 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0100845">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005395 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005395">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005812 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005812">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0018940 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018940">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0032830 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0032830">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0001914 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MP_0001914">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C155831 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C155831">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001004">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0034947 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0034947">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000540 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000540">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000544 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000544">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000618 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000618">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000684 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000684">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000771 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000771">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002970 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002970">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004255 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004255">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004292 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004292">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004323 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004323">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0005251 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005251">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007427 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007427">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0009431 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009431">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0009518 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009518">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0009579 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009579">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0010085 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010085">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0010634 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010634">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_1000879 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_1000879">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/sira/SIRA_0000001 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/sira/SIRA_0000001"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

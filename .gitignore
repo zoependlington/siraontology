@@ -1,0 +1,10 @@
+
+src/ontology/mirror/uberon.owl
+src/ontology/mirror/ordo.owl
+src/ontology/mirror/ncit.owl
+src/ontology/mirror/mp.owl
+src/ontology/mirror/mondo.owl
+src/ontology/mirror/mondo.obo
+src/ontology/mirror/hp.owl
+src/ontology/mirror/efo.owl
+src/ontology/mirror/doid.owl

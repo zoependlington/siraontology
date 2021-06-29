@@ -1,0 +1,5 @@
+BFO:0000050
+http://purl.obolibrary.org/obo/UBERON_0001004
+http://purl.obolibrary.org/obo/UBERON_0034874
+http://purl.obolibrary.org/obo/UBERON_0034947
+terms

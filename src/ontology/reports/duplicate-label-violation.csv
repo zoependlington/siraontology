@@ -1,0 +1,15 @@
+cls1,cls2,label
+http://www.ebi.ac.uk/efo/EFO_0005549,http://purl.obolibrary.org/obo/DOID_11405,diphtheria
+http://www.ebi.ac.uk/efo/EFO_0003106,http://purl.obolibrary.org/obo/DOID_552,pneumonia
+http://purl.obolibrary.org/obo/DOID_552,http://www.ebi.ac.uk/efo/EFO_0003106,pneumonia
+http://www.ebi.ac.uk/efo/EFO_0007292,http://purl.obolibrary.org/obo/DOID_12842,Guillain-Barre syndrome
+http://purl.obolibrary.org/obo/MONDO_0005395,http://www.ebi.ac.uk/efo/EFO_0004280,movement disorder
+http://purl.obolibrary.org/obo/MONDO_0005812,http://www.ebi.ac.uk/efo/EFO_0007328,influenza
+http://purl.obolibrary.org/obo/DOID_12842,http://www.ebi.ac.uk/efo/EFO_0007292,Guillain-Barre syndrome
+http://purl.obolibrary.org/obo/DOID_2914,http://www.ebi.ac.uk/efo/EFO_0000540,immune system disease
+http://www.ebi.ac.uk/efo/EFO_0007227,http://purl.obolibrary.org/obo/DOID_9395,croup
+http://www.ebi.ac.uk/efo/EFO_0004280,http://purl.obolibrary.org/obo/MONDO_0005395,movement disorder
+http://www.ebi.ac.uk/efo/EFO_0007328,http://purl.obolibrary.org/obo/MONDO_0005812,influenza
+http://www.ebi.ac.uk/efo/EFO_0000540,http://purl.obolibrary.org/obo/DOID_2914,immune system disease
+http://purl.obolibrary.org/obo/DOID_9395,http://www.ebi.ac.uk/efo/EFO_0007227,croup
+http://purl.obolibrary.org/obo/DOID_11405,http://www.ebi.ac.uk/efo/EFO_0005549,diphtheria

@@ -1,0 +1,17 @@
+BFO:0000050
+http://purl.obolibrary.org/obo/HP_0000969
+http://purl.obolibrary.org/obo/HP_0001787
+http://purl.obolibrary.org/obo/HP_0002086
+http://purl.obolibrary.org/obo/HP_0002090
+http://purl.obolibrary.org/obo/HP_0002315
+http://purl.obolibrary.org/obo/HP_0002788
+http://purl.obolibrary.org/obo/HP_0002863
+http://purl.obolibrary.org/obo/HP_0004326
+http://purl.obolibrary.org/obo/HP_0011951
+http://purl.obolibrary.org/obo/HP_0012252
+http://purl.obolibrary.org/obo/HP_0012398
+http://purl.obolibrary.org/obo/HP_0020090
+http://purl.obolibrary.org/obo/HP_0025040
+http://purl.obolibrary.org/obo/HP_0030915
+http://purl.obolibrary.org/obo/HP_0100845
+term

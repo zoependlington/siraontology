@@ -1,0 +1,2334 @@
+format-version: 1.2
+data-version: http://www.ebi.ac.uk/sira/releases/v1.0.0/sira.owl
+subsetdef: 1_STAR "Preliminary entries"
+subsetdef: 2_STAR "Annotated by 3rd party"
+subsetdef: 3_STAR "Manually annotated by ChEBI Team"
+subsetdef: DO_AGR_slim ""
+subsetdef: DO_FlyBase_slim ""
+subsetdef: DO_GXD_slim ""
+subsetdef: DO_MGI_slim ""
+subsetdef: efo_slim ""
+subsetdef: functional_classification ""
+subsetdef: gard_rare ""
+subsetdef: gram-positive_bacterial_infectious_disease ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
+subsetdef: http://www.ebi.ac.uk/efo/added_for_HCA "Term added upon request from Human Cell Atlas curators."
+subsetdef: IMPC_Prenatal ""
+subsetdef: NCIthesaurus ""
+subsetdef: ordo_disease ""
+subsetdef: ordo_etiological_subtype ""
+subsetdef: ordo_group_of_disorders ""
+subsetdef: pheno_slim ""
+subsetdef: ro-eco ""
+subsetdef: Sanger_Terms ""
+subsetdef: uberon_slim ""
+subsetdef: vertebrate_core ""
+synonymtypedef: BRAND_NAME "BRAND NAME"
+synonymtypedef: INN "INN"
+synonymtypedef: IUPAC_NAME "IUPAC NAME"
+remark: 2021-06-29
+ontology: http://www.ebi.ac.uk/sira/sira.owl
+property_value: http://purl.obolibrary.org/obo/format-version "1.4" xsd:string
+property_value: http://purl.org/dc/elements/1.1/rights "Copyright [2014] EMBL - European Bioinformatics Institute\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the\nLicense. " xsd:string
+property_value: http://purl.org/dc/terms/license "www.apache.org/licenses/LICENSE-2.0" xsd:string
+property_value: http://www.ebi.ac.uk/efo/creator "Sirarat Sarntivijai" xsd:string
+property_value: owl:versionInfo "1.0.0" xsd:string
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://www.ebi.ac.uk/sira/SIRA_0000001>))\nDeclaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\nDeclaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))\n############################\n#   Annotation Properties\n############################\n\n# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#created_by> (created_by)\n\nSubAnnotationPropertyOf(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.org/dc/elements/1.1/creator>)\n\n# Annotation Property: <http://www.w3.org/2004/02/skos/core#prefLabel> (preferred label)\n\nSubAnnotationPropertyOf(<http://www.w3.org/2004/02/skos/core#prefLabel> rdfs:label)\n\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://www.ebi.ac.uk/sira/SIRA_0000001> (literature services)\n\nSubClassOf(<http://www.ebi.ac.uk/sira/SIRA_0000001> owl:Thing)\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0000052> \"inheres_in\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0004029> \"disease_has_feature\")\n)
+
+[Term]
+id: DOID:11405
+name: diphtheria
+namespace: disease_ontology
+alt_id: DOID:4132
+def: "A primary bacterial infectious disease that is characterized by sore throat, low fever, and an adherent membrane (a pseudomembrane) on the tonsils, pharynx, and/or nasal cavity. A milder form of diphtheria can be restricted to the skin. It is caused by Corynebacterium diphtheriae, an aerobic Gram-positive bacterium. Diphtheria toxin spreads through the bloodstream and can lead to potentially life-threatening complications that affect other organs of the body, such as the heart and kidneys." [url:http\://en.wikipedia.org/wiki/Diphtheria] {http://purl.org/dc/elements/1.1/type="ECO:0007638"}
+subset: gram-positive_bacterial_infectious_disease
+synonym: "corynebacterium infection" EXACT []
+xref: GARD:1875
+xref: MESH:D003354
+xref: SNOMEDCT_US_2020_09_01:397434007
+xref: UMLS_CUI:C0010153
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: DOID:12399
+name: pathological gambling
+namespace: disease_ontology
+def: "An impulse control disorder that involves the uncontrollable impulse to gamble, irrespective of the interference the behaviour has on the individual's life." [url:https\://www.ncbi.nlm.nih.gov/pmc/articles/PMC3004711/] {http://purl.org/dc/elements/1.1/type="ECO:0007645"}
+comment: OMIM mapping confirmed by DO. [SN].
+subset: NCIthesaurus
+synonym: "Compulsive gambling" EXACT []
+synonym: "Pathological gambling" EXACT []
+xref: ICD10CM:F63.0
+xref: ICD9CM:312.31
+xref: MESH:D005715
+xref: NCI:C94335
+xref: OMIM:606349
+xref: SNOMEDCT_US_2020_09_01:18085000
+xref: UMLS_CUI:C0030662
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: DOID:12400
+name: kleptomania
+namespace: disease_ontology
+def: "An impulse control disorder that involves the repeated impulse to steal for no great gain, when he or she has sufficient money to pay for the item and no need for what is stolen." [url:https\://en.wikipedia.org/wiki/Kleptomania] {http://purl.org/dc/elements/1.1/type="ECO:0007638"}
+subset: NCIthesaurus
+synonym: "Pathological stealing" EXACT []
+xref: ICD10CM:F63.2
+xref: ICD9CM:312.32
+xref: MESH:D007174
+xref: NCI:C94333
+xref: SNOMEDCT_US_2020_09_01:69361009
+xref: UMLS_CUI:C0022734
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: DOID:12842
+name: Guillain-Barre syndrome
+namespace: disease_ontology
+def: "An autoimmune disease of peripheral nervous system that causes body's immune system to attack part of the peripheral nervous system." [url:http\://www.ninds.nih.gov/disorders/gbs/gbs.htm] {http://purl.org/dc/elements/1.1/type="ECO:0007637"}
+comment: OMIM mapping confirmed by DO. [SN].
+subset: NCIthesaurus
+synonym: "acute infective polyneuritis" EXACT []
+synonym: "acute inflammatory demyelinating polyradiculopathy" EXACT []
+synonym: "acute postinfectious polyneuropathy" EXACT []
+synonym: "Infectious neuronitis" EXACT []
+synonym: "Post-infectious polyneuritis" EXACT []
+synonym: "Postinfectious polyneuritis" EXACT []
+xref: GARD:6554
+xref: ICD10CM:G61.0
+xref: MESH:D020275
+xref: NCI:C116345
+xref: OMIM:139393
+xref: SNOMEDCT_US_2020_09_01:155082001
+xref: UMLS_CUI:C0018378
+is_a: DOID:2914 ! immune system disease
+
+[Term]
+id: DOID:12889
+name: Miller Fisher syndrome
+namespace: disease_ontology
+def: "A Guillain-Barre syndrome that manifests as a descending paralysis. It usually affects the eye muscles first and presents with the triad of ophthalmoplegia, ataxia, and areflexia." [url:http\://en.wikipedia.org/wiki/Miller_Fisher_syndrome#Classification] {http://purl.org/dc/elements/1.1/type="ECO:0007638"}
+subset: NCIthesaurus
+synonym: "Fisher's syndrome" EXACT []
+synonym: "Miller-Fisher variant of Guillain-Barre syndrome" EXACT []
+xref: GARD:3668
+xref: ICD10CM:G61.0
+xref: MESH:D019846
+xref: NCI:C116958
+xref: SNOMEDCT_US_2020_09_01:1767005
+xref: UMLS_CUI:C0393799
+is_a: DOID:12842 ! Guillain-Barre syndrome
+
+[Term]
+id: DOID:2914
+name: immune system disease
+namespace: disease_ontology
+def: "A disease of anatomical entity that is located_in the immune system." [url:http\://en.wikipedia.org/wiki/Immune_system] {http://purl.org/dc/elements/1.1/type="ECO:0007638"}
+subset: DO_AGR_slim
+subset: DO_FlyBase_slim
+subset: DO_GXD_slim
+subset: DO_MGI_slim
+xref: EFO:0000540
+xref: ICD10CM:D89.9
+xref: ICD9CM:279.9
+xref: SNOMEDCT_US_2020_09_01:154782004
+xref: UMLS_CUI:C0041806
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: DOID:552
+name: pneumonia
+namespace: disease_ontology
+alt_id: DOID:10509
+alt_id: DOID:11742
+alt_id: DOID:5871
+def: "A lung disease that involves lung parenchyma or alveolar inflammation and abnormal alveolar filling with fluid (consolidation and exudation). It results from a variety of causes including infection with bacteria, viruses, fungi or parasites, and chemical or physical injury to the lungs. It is accompanied by fever, chills, cough, and difficulty in breathing." [url:http\://en.wikipedia.org/wiki/Pneumonia] {http://purl.org/dc/elements/1.1/type="ECO:0007638"}
+subset: NCIthesaurus
+synonym: "acute pneumonia" EXACT []
+xref: MESH:D011014
+xref: NCI:C3333
+xref: SNOMEDCT_US_2020_09_01:266391003
+xref: UMLS_CUI:C0032285
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: DOID:9248
+name: Pallister-Hall syndrome
+namespace: disease_ontology
+comment: OMIM mapping confirmed by DO. [SN].
+subset: NCIthesaurus
+synonym: "A syndrome that is characterized by hypothalamic hamartoma, pituitary dysfunction, central polydactyly, and visceral malformations and has_material_basis_in autosomal dominant heterozygous mutation in the GLI3 gene on chromosome 7p14." EXACT []
+xref: GARD:7305
+xref: MESH:D054975
+xref: NCI:C84987
+xref: OMIM:146510
+xref: SNOMEDCT_US_2020_09_01:56677004
+xref: UMLS_CUI:C0265220
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: DOID:9395
+name: croup
+namespace: disease_ontology
+def: "A respiratory system infectious disease that involves inflammation, edema, and subsequent obstruction of the larynx, trachea, and bronchi. The disease is caused by viruses, bacteria, allergies and inhaled irritants. It is marked by episodes of difficult breathing and hoarse metallic cough in infants and young children. Croup is caused by parainfluenza virus (types 1 and 2), Influenza A and B viruses, Measles virus, adenovirus, respiratory syncytial virus, Staphylococcus and Streptococcus." [url:http\://books.google.com/books?id=G6k0tpPMRsIC&pg=PA254&lpg=PA254&dq#v=onepage&q=&f=false, url:http\://www.nlm.nih.gov/medlineplus/ency/article/000959.htm, url:http\://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=croup] {http://purl.org/dc/elements/1.1/type="ECO:0007643", http://purl.org/dc/elements/1.1/type="ECO:0007640"}
+subset: NCIthesaurus
+synonym: "acute laryngotracheobronchitis" EXACT []
+synonym: "acute Obstructive Laryngitis" EXACT []
+synonym: "Croup syndrome" EXACT []
+synonym: "Laryngotracheobronchitis" EXACT []
+xref: ICD10CM:J05.0
+xref: ICD9CM:464.4
+xref: MESH:D003440
+xref: NCI:C26735
+xref: SNOMEDCT_US_2020_09_01:71186008
+xref: UMLS_CUI:C0010380
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: EFO:0000540
+name: immune system disease
+def: "A disorder resulting from an abnormality in the immune system." [NCIT:C3507]
+def: "A group of non-neoplastic and neoplastic disorders resulting from the deregulation and/or deficiency of immune system functions.  It includes autoimmune disorders (e.g., lupus erythematosus, dermatomyositis, rheumatoid arthritis), congenital and acquired immunodeficiency syndromes including the acquired immune deficiency syndrome (AIDS), and neoplasms (e.g., lymphomas and malignancies secondary to transplantation.)" []
+synonym: "[X]Disorder involving the immune mechanism, unspecified" EXACT []
+synonym: "[X]Disorder involving the immune mechanism, unspecified (disorder)" EXACT []
+synonym: "AUTOIMMUNE DISEASE NEC" EXACT []
+synonym: "Autoimmune disease, not elsewhere classified" EXACT []
+synonym: "autoimmune diseases" EXACT []
+synonym: "DEFIC CELL IMMUNITY NOS" EXACT []
+synonym: "Deficiency of cell-mediated immunity" EXACT []
+synonym: "disease of immune system" EXACT [MONDO:patterns/location_top]
+synonym: "disease or disorder of immune system" EXACT []
+synonym: "disorder of immune system" EXACT [MONDO:patterns/location_top, NCIT:C3507]
+synonym: "Disorder of the immune mechanism NOS" EXACT []
+synonym: "Disorder of the immune mechanism NOS (disorder)" EXACT []
+synonym: "Disorders involving the immune mechanism" EXACT []
+synonym: "IMMUNDEF T-CELL DEF NOS" EXACT []
+synonym: "immune disease" EXACT [DOID:2914]
+synonym: "immune disorder" EXACT [NCIT:C3507]
+synonym: "immune dysfunction" EXACT [NCIT:C3507]
+synonym: "IMMUNE MECHANISM DIS NEC" EXACT []
+synonym: "IMMUNE MECHANISM DIS NOS" EXACT []
+synonym: "Immune System and Related Disorders" EXACT []
+synonym: "immune system disease" EXACT [] {comment="preferred label from MONDO"}
+synonym: "immune system disease or disorder" EXACT [MONDO:design_pattern, MONDO:patterns/location]
+synonym: "immune system disorder" EXACT [NCIT:C3507]
+synonym: "Immunodeficiency and Immunosuppression Disorders" EXACT []
+synonym: "Immunodeficiency with predominant T-cell defect, unspecified" EXACT []
+synonym: "Other deficiency of cell-mediated immunity" EXACT []
+synonym: "Other specified disorders involving the immune mechanism" EXACT []
+synonym: "Other specified disorders of the immune mechanism" EXACT []
+synonym: "Other specified disorders of the immune mechanism (disorder)" EXACT []
+synonym: "Unspecified disorder of immune mechanism" EXACT []
+xref: DOID:2914 {source="EFO:0000540", source="MONDO:equivalentTo"}
+xref: ICD10:D89
+xref: ICD10:D89.9 {source="DOID:2914"}
+xref: ICD9:279 {source="EFO:0000540", source="DOID:2914"}
+xref: ICD9:279.1 {source="EFO:0000540"}
+xref: ICD9:279.10 {source="EFO:0000540"}
+xref: ICD9:279.19 {source="EFO:0000540"}
+xref: ICD9:279.4 {source="EFO:0000540"}
+xref: ICD9:279.49 {source="EFO:0000540"}
+xref: ICD9:279.8 {source="MONDO:relatedTo", source="EFO:0000540", source="i2s"}
+xref: ICD9:279.9 {source="EFO:0000540", source="MONDO:equivalentTo", source="i2s", source="DOID:2914"}
+xref: MeSH:D001327
+xref: MESH:D007154 {source="MONDO:equivalentTo"}
+xref: MONDO:0005046
+xref: NCIt:C27351
+xref: NCIT:C3507 {source="MONDO:equivalentTo"}
+xref: OMIM:109100
+xref: SCTID:414029004 {source="MONDO:equivalentTo"}
+is_a: SIRA:0000001 ! literature services
+property_value: closeMatch http://identifiers.org/snomedct/154782004
+property_value: closeMatch http://identifiers.org/snomedct/191015009
+property_value: closeMatch http://identifiers.org/snomedct/191019003
+property_value: closeMatch http://identifiers.org/snomedct/191035005
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0021053
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0041806
+property_value: closeMatch NCIT:C27351
+property_value: exactMatch DOID:2914
+property_value: exactMatch http://identifiers.org/mesh/D007154
+property_value: exactMatch http://identifiers.org/snomedct/414029004
+property_value: exactMatch NCIT:C3507
+property_value: gwas:trait "true" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
+
+[Term]
+id: EFO:0000544
+name: infection
+def: "The state of being infected such as from the introduction of a foreign agent such as serum, vaccine, antigenic substance or organism." []
+xref: MedDRA:10021789
+xref: MeSH:D007239
+is_a: SIRA:0000001 ! literature services
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
+id: EFO:0000551
+name: intracranial hemorrhage
+def: "Bleeding within the cranium." [NCIT:P378]
+def: "Bleeding within the SKULL, including hemorrhages in the brain and the three membranes of MENINGES. The escape of blood often leads to the formation of HEMATOMA in the cranial epidural, subdural, and subarachnoid spaces." []
+comment: Editor note: consider obsoleting https://github.com/EBISPOT/OLS/issues/207
+synonym: "Brain Hemorrhage" EXACT []
+synonym: "Brain Hemorrhages" EXACT []
+synonym: "HEMORRHAGE INTRACRANIAL" EXACT []
+synonym: "Hemorrhage, Brain" EXACT []
+synonym: "Hemorrhage, Intracranial" EXACT []
+synonym: "Hemorrhage, Posterior Fossa" EXACT []
+synonym: "Hemorrhages, Brain" EXACT []
+synonym: "Hemorrhages, Intracranial" EXACT []
+synonym: "Hemorrhages, Posterior Fossa" EXACT []
+synonym: "Intracranial haemorrhage" EXACT []
+synonym: "Intracranial haemorrhage NOS" EXACT []
+synonym: "INTRACRANIAL HEMORR NOS" EXACT []
+synonym: "Intracranial Hemorrhage" EXACT []
+synonym: "intracranial hemorrhage" EXACT [] {comment="preferred label from MONDO"}
+synonym: "Intracranial hemorrhage (disorder)" EXACT []
+synonym: "intracranial hemorrhage NOS (disorder)" EXACT []
+synonym: "Intracranial hemorrhage, NOS" EXACT []
+synonym: "Intracranial Hemorrhages" EXACT []
+synonym: "Posterior Fossa Hemorrhage" EXACT []
+synonym: "Posterior Fossa Hemorrhages" EXACT []
+synonym: "Unspecified intracranial hemorrhage" EXACT []
+xref: ICD10:I62
+xref: ICD9:432.9 {source="EFO:0000551"}
+xref: MedDRA:10022763
+xref: MedDRA:10055295
+xref: MESH:D020300 {source="EFO:0000551", source="MONDO:equivalentTo"}
+xref: MeSH:D020300
+xref: MONDO:0005049
+xref: SNOMEDCT:1386000
+xref: UMLS:CN236663 {source="MONDO:equivalentTo"}
+is_a: EFO:0000618 ! nervous system disease
+property_value: closeMatch http://identifiers.org/snomedct/1386000
+property_value: exactMatch http://identifiers.org/mesh/D020300
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/CN236663
+property_value: exactMatch NCIT:C50438
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Zoe May Pendlington" xsd:string
+
+[Term]
+id: EFO:0000618
+name: nervous system disease
+def: "a general class of medical conditions affecting the nervous system." []
+def: "A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves." [NCIT:C26835]
+synonym: "disease of nervous system" EXACT [MONDO:patterns/location_top]
+synonym: "disease or disorder of nervous system" EXACT []
+synonym: "disorder of nervous system" EXACT [MONDO:patterns/location_top, NCIT:C26835]
+synonym: "nervous system disease" EXACT [MONDO:patterns/location]
+synonym: "nervous system disease or disorder" EXACT [MONDO:design_pattern, MONDO:patterns/location]
+synonym: "nervous system disorder" EXACT [NCIT:C26835]
+synonym: "nervous system disorder" EXACT [] {comment="preferred label from MONDO"}
+synonym: "neurologic disease" EXACT [DOID:863]
+synonym: "neurologic disorder" EXACT [DOID:863, ISBN-13:978-1259644030, NCIT:C26835]
+synonym: "neurological disease" EXACT [DOID:863]
+synonym: "neurological disorder" EXACT [DOID:863]
+synonym: "neurological problem" EXACT []
+xref: DOID:863 {source="EFO:0000618", source="MONDO:equivalentTo"}
+xref: ICD10:G00-G99 {source="DOID:863"}
+xref: ICD10:G00.G99 {source="MONDO:equivalentTo"}
+xref: ICD10:G98 {source="DOID:863"}
+xref: ICD10:G98.8 {source="DOID:863"}
+xref: ICD9:349.89 {source="MONDO:relatedTo", source="i2s"}
+xref: ICD9:349.9 {source="DOID:863", source="MONDO:equivalentTo", source="i2s"}
+xref: MESH:D009422 {source="DOID:863", source="MONDO:equivalentTo"}
+xref: MONDO:0005071
+xref: NCIT:C26835 {source="DOID:863", source="MONDO:equivalentTo", source="NCIT:C26835"}
+xref: SCTID:118940003 {source="DOID:863", source="MONDO:equivalentTo"}
+xref: UMLS:C0027765 {source="DOID:863", source="MONDO:equivalentTo", source="NCIT:C26835"}
+xref: Wikipedia:Nervous_system_disease {source="EFO:0000618"}
+is_a: SIRA:0000001 ! literature services
+property_value: closeMatch http://identifiers.org/snomedct/154981003
+property_value: closeMatch http://identifiers.org/snomedct/155262005
+property_value: closeMatch http://identifiers.org/snomedct/192641002
+property_value: closeMatch http://identifiers.org/snomedct/267679005
+property_value: closeMatch http://identifiers.org/snomedct/286946008
+property_value: exactMatch DOID:863
+property_value: exactMatch http://identifiers.org/mesh/D009422
+property_value: exactMatch http://identifiers.org/snomedct/118940003
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0027765
+property_value: exactMatch NCIT:C26835
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+
+[Term]
+id: EFO:0000684
+name: respiratory system disease
+def: "A body system disease that occurs in different organs functioning in respiration and consisting especially of the nose, nasal passages, nasopharynx, larynx, trachea, bronchi, and lungs." []
+def: "A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma." [NCIT:C26871]
+synonym: "[X]Chronic and other pulmonary manifestations due to radiation" EXACT []
+synonym: "[X]Chronic and other pulmonary manifestations due to radiation (disorder)" EXACT []
+synonym: "[X]Other diseases of the respiratory system" EXACT []
+synonym: "[X]Other diseases of the respiratory system (disorder)" EXACT []
+synonym: "[X]Respiratory conditions due to other specified external agents" EXACT []
+synonym: "[X]Respiratory conditions due to other specified external agents (disorder)" EXACT []
+synonym: "[X]Respiratory conditions due to unspecified external agent" EXACT []
+synonym: "[X]Respiratory conditions due to unspecified external agent (disorder)" EXACT []
+synonym: "ALVEOL PNEUMONOPATHY NEC" EXACT []
+synonym: "ALVEOL PNEUMONOPATHY NOS" EXACT []
+synonym: "CHR PUL MANIF D/T RADIAT" EXACT []
+synonym: "Chronic and other pulmonary manifestations due to radiation" EXACT []
+synonym: "Disease of respiratory system" EXACT []
+synonym: "disease of respiratory system" EXACT [MONDO:patterns/location_top]
+synonym: "Disease of respiratory system (disorder)" EXACT []
+synonym: "Disease of respiratory system, NOS" EXACT []
+synonym: "disease or disorder of respiratory system" EXACT []
+synonym: "DISEASES OF THE RESPIRATORY SYSTEM" EXACT []
+synonym: "Disorder of respiratory system" EXACT []
+synonym: "disorder of respiratory system" EXACT [MONDO:patterns/location_top, NCIT:C26871]
+synonym: "Disorder of respiratory system (disorder)" EXACT []
+synonym: "INORG DUST PNEUMOCON NEC" EXACT []
+synonym: "LUNG INVOLV IN OTH DIS" EXACT []
+synonym: "Lung involvement in conditions classified elsewhere" EXACT []
+synonym: "Lung involvement in other diseases classified elsewhere" EXACT []
+synonym: "MEDIASTINUM DISEASE NEC" EXACT []
+synonym: "Other alveolar and parietoalveolar pneumonopathy" EXACT []
+synonym: "Other diseases of mediastinum, not elsewhere classified" EXACT []
+synonym: "Other diseases of respiratory system" EXACT []
+synonym: "Other diseases of respiratory system NOS" EXACT []
+synonym: "Other diseases of respiratory system NOS (disorder)" EXACT []
+synonym: "Other diseases of respiratory system, not elsewhere classified" EXACT []
+synonym: "Other diseases of trachea and bronchus, not elsewhere classified" EXACT []
+synonym: "Other respiratory system diseases" EXACT []
+synonym: "Other respiratory system diseases (disorder)" EXACT []
+synonym: "Other respiratory system diseases NOS" EXACT []
+synonym: "Other respiratory system diseases NOS (disorder)" EXACT []
+synonym: "Other specified alveolar and parietoalveolar pneumonopathies" EXACT []
+synonym: "PNEUMOCONIOSES AND OTHER LUNG DISEASES DUE TO EXTERNAL AGENTS" EXACT []
+synonym: "Pneumoconiosis due to other inorganic dust" EXACT []
+synonym: "RESP COND: EXT AGENT NEC" EXACT []
+synonym: "RESP COND: EXT AGENT NOS" EXACT []
+synonym: "RESP SYSTEM DISEASE NEC" EXACT []
+synonym: "RESP SYSTEM DISEASE NOS" EXACT []
+synonym: "Respiratory conditions due to other and unspecified external agents" EXACT []
+synonym: "Respiratory conditions due to other specified external agents" EXACT []
+synonym: "Respiratory conditions due to unspecified external agent" EXACT []
+synonym: "Respiratory disease" EXACT []
+synonym: "respiratory disease" EXACT [DOID:1579]
+synonym: "Respiratory disorder" EXACT []
+synonym: "respiratory disorder" EXACT [NCIT:C26871]
+synonym: "Respiratory disorder, NOS" EXACT []
+synonym: "respiratory system disease" EXACT [MONDO:patterns/location]
+synonym: "respiratory system disease" EXACT [] {comment="preferred label from MONDO"}
+synonym: "respiratory system disease or disorder" EXACT [MONDO:design_pattern, MONDO:patterns/location]
+synonym: "Respiratory system diseases NOS" EXACT []
+synonym: "Respiratory system diseases NOS (disorder)" EXACT []
+synonym: "Respiratory System Disorder" EXACT []
+synonym: "respiratory system disorder" EXACT [NCIT:C26871]
+synonym: "Unspecified alveolar and parietoalveolar pneumonopathy" EXACT []
+synonym: "Unspecified disease of respiratory system" EXACT []
+xref: DOID:1579 {source="EFO:0000684", source="MONDO:equivalentTo"}
+xref: ICD10:J06
+xref: ICD10:J34
+xref: ICD10:J39
+xref: ICD10:J63
+xref: ICD10:J96-J99 {source="DOID:1579"}
+xref: ICD10:J98 {source="DOID:1579"}
+xref: ICD10:J99
+xref: ICD9:460-519.99 {source="EFO:0000684"}
+xref: ICD9:500-508.99 {source="EFO:0000684"}
+xref: ICD9:503 {source="EFO:0000684"}
+xref: ICD9:508 {source="EFO:0000684"}
+xref: ICD9:508.1 {source="EFO:0000684"}
+xref: ICD9:508.8 {source="EFO:0000684"}
+xref: ICD9:508.9 {source="EFO:0000684"}
+xref: ICD9:510-519.99 {source="EFO:0000684", source="DOID:1579"}
+xref: ICD9:516 {source="EFO:0000684"}
+xref: ICD9:516.8 {source="EFO:0000684"}
+xref: ICD9:516.9 {source="EFO:0000684"}
+xref: ICD9:517 {source="EFO:0000684"}
+xref: ICD9:517.8 {source="EFO:0000684"}
+xref: ICD9:519 {source="EFO:0000684", source="DOID:1579"}
+xref: ICD9:519.1 {source="EFO:0000684"}
+xref: ICD9:519.3 {source="EFO:0000684"}
+xref: ICD9:519.8 {source="MONDO:relatedTo", source="EFO:0000684", source="i2s"}
+xref: ICD9:519.9 {source="EFO:0000684", source="MONDO:equivalentTo", source="i2s"}
+xref: ICD9:V12.60 {source="MONDO:equivalentTo", source="i2s"}
+xref: ICD9:V47.2 {source="MONDO:relatedTo", source="i2s"}
+xref: MESH:D012140 {source="MONDO:equivalentTo"}
+xref: MONDO:0005087
+xref: NCIT:C26871 {source="EFO:0000684", source="MONDO:equivalentTo"}
+xref: NCIt:C26871
+xref: SCTID:50043002 {source="EFO:0000684", source="MONDO:equivalentTo"}
+xref: SNOMEDCT:50043002
+is_a: SIRA:0000001 ! literature services
+property_value: closeMatch http://identifiers.org/snomedct/155603009
+property_value: closeMatch http://identifiers.org/snomedct/196057004
+property_value: closeMatch http://identifiers.org/snomedct/196184000
+property_value: closeMatch http://identifiers.org/snomedct/196255004
+property_value: closeMatch http://identifiers.org/snomedct/266373008
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0029582
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0035204
+property_value: exactMatch DOID:1579
+property_value: exactMatch http://identifiers.org/mesh/D012140
+property_value: exactMatch http://identifiers.org/snomedct/50043002
+property_value: exactMatch NCIT:C26871
+property_value: gwas:trait "true" xsd:boolean
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
+id: EFO:0000771
+name: bacterial disease
+def: "A bacterial disease is a disease factor that is caused primarily by bacteria." []
+def: "An acute infectious disorder that is caused by gram positive or gram negative bacteria; representative examples include pneumococcal, streptococcal, salmonella, and meningeal infections." [NCIT:C2890]
+synonym: "Bacteria caused disease or disorder" EXACT [MONDO:patterns/specific_infectious_disease_by_agent]
+synonym: "Bacteria disease or disorder" EXACT []
+synonym: "Bacteria infectious disease" EXACT []
+synonym: "bacterial disease" EXACT [NCIT:C2890]
+synonym: "bacterial disorder" EXACT [NCIT:C2890]
+synonym: "bacterial infection" EXACT [MESH:D001424, NCIT:C2890]
+synonym: "bacterial infectious disease" EXACT [] {comment="preferred label from MONDO"}
+synonym: "bacterial infectious disease" EXACT [MONDO:0001026]
+synonym: "infection, bacterial" EXACT [MESH:D001424, NCIT:C2890]
+synonym: "infections, bacterial" RELATED [MESH:D001424]
+xref: COHD:432545 {source="MONDO:equivalentTo"}
+xref: DOID:104 {source="MONDO:equivalentTo"}
+xref: ICD10:A04
+xref: ICD10:A49 {source="DOID:104"}
+xref: ICD10:A49.9 {source="DOID:104"}
+xref: ICD9:040.89 {source="MONDO:relatedTo", source="i2s"}
+xref: ICD9:041.89 {source="MONDO:relatedTo", source="i2s"}
+xref: ICD9:041.9 {source="MONDO:equivalentTo", source="i2s"}
+xref: MESH:D001424 {source="DOID:104", source="MONDO:equivalentTo"}
+xref: MONDO:0005113
+xref: NCIT:C2890 {source="DOID:104", source="MONDO:equivalentTo"}
+xref: SCTID:87628006 {source="DOID:104", source="MONDO:equivalentTo"}
+xref: UMLS:C0004623 {source="DOID:104", source="NCIT:C2890", source="MONDO:equivalentTo"}
+is_a: SIRA:0000001 ! literature services
+property_value: closeMatch http://identifiers.org/snomedct/154318005
+property_value: closeMatch http://identifiers.org/snomedct/186470002
+property_value: closeMatch http://identifiers.org/snomedct/187347000
+property_value: closeMatch http://identifiers.org/snomedct/266182006
+property_value: closeMatch http://identifiers.org/snomedct/266187000
+property_value: closeMatch http://identifiers.org/snomedct/301811001
+property_value: exactMatch DOID:104
+property_value: exactMatch http://identifiers.org/mesh/D001424
+property_value: exactMatch http://identifiers.org/snomedct/87628006
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0004623
+property_value: exactMatch NCIT:C2890
+property_value: IAO:0000117 "James Malone" xsd:string
+
+[Term]
+id: EFO:0002970
+name: muscular disease
+def: "A muscular disease in which the muscle fibers do not function resulting in muscular weakness." []
+def: "Acquired, familial, and congenital disorders of SKELETAL MUSCLE and SMOOTH MUSCLE." []
+def: "Acquired, familial, and congenital disorders of skeletal muscle and smooth muscle." [MESH:D009135]
+def: "Myopathy is a peripheral nervous system disease consisting of any abnormal condition or disease of the muscular tissues; commonly designates a disorder involving skeletal muscle." []
+comment: Editor note: consider merging with child
+synonym: "disease of muscle organ" EXACT [MONDO:patterns/location_top]
+synonym: "disease or disorder of muscle organ" EXACT []
+synonym: "disorder of muscle organ" EXACT [MONDO:patterns/location_top]
+synonym: "MUSCLE DIS" EXACT []
+synonym: "Muscle Disorder" EXACT []
+synonym: "Muscle Disorders" EXACT []
+synonym: "muscle organ disease" EXACT [MONDO:patterns/location]
+synonym: "muscle organ disease or disorder" EXACT [MONDO:design_pattern, MONDO:patterns/location]
+synonym: "MUSCULAR DIS" EXACT []
+synonym: "muscular disease" EXACT [] {comment="preferred label from MONDO"}
+synonym: "Muscular Diseases" EXACT []
+synonym: "Myopathic Condition" EXACT []
+synonym: "Myopathic Conditions" EXACT []
+xref: DOID:0080000 {source="EFO:0002970", source="MONDO:equivalentTo"}
+xref: ICD10:G71
+xref: ICD10:M62
+xref: MESH:D009135 {source="EFO:0002970", source="MONDO:equivalentTo"}
+xref: MeSH:D009135
+xref: MONDO:0005218
+is_a: SIRA:0000001 ! literature services
+property_value: exactMatch DOID:0080000
+property_value: exactMatch http://identifiers.org/mesh/D009135
+property_value: excluded_subClassOf MONDO:0005172 {source="EFO:0002970"}
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
+
+[Term]
+id: EFO:0003106
+name: pneumonia
+def: "A lung disease that involves lung parenchyma or alveolar inflammation and abnormal alveolar filling with fluid (consolidation and exudation). It results from infection with bacteria, viruses, fungi or parasites. It is accompanied by fever, chills, cough, and difficulty in breathing." []
+def: "An acute, acute and chronic, or chronic inflammation focally or diffusely affecting the lung parenchyma, caused by an infection in one or both of the lungs (by bacteria, viruses, fungi, or mycoplasma.). Symptoms include cough, shortness of breath, fevers, chills, chest pain, headache, sweating, and weakness." [NCIT:P378]
+synonym: "acute pneumonia" EXACT []
+synonym: "acute pneumonia" NARROW [DOID:552]
+synonym: "chest infection due to pneumonia" EXACT []
+synonym: "pneumonia" EXACT [] {comment="preferred label from MONDO"}
+synonym: "Pneumonia (disorder)" EXACT []
+synonym: "Pneumonia (disorder) [Ambiguous]" EXACT []
+synonym: "Pneumonia due to other specified organism" EXACT []
+synonym: "Pneumonia due to other specified organisms" EXACT []
+synonym: "Pneumonia due to other specified organisms (disorder)" EXACT []
+synonym: "Pneumonia NOS" EXACT []
+synonym: "Pneumonia NOS (disorder)" EXACT []
+synonym: "pneumonia with infectious disease" EXACT []
+synonym: "Pneumonitis" EXACT []
+synonym: "Pneumonitis (disorder)" EXACT []
+xref: COHD:255848 {source="MONDO:equivalentTo"}
+xref: DOID:552 {source="EFO:0003106", source="MONDO:equivalentTo"}
+xref: ICD10:J15 {source="MONDO:equivalentTo"}
+xref: ICD10:J18
+xref: ICD9:483 {source="EFO:0003106"}
+xref: ICD9:483.8 {source="EFO:0003106"}
+xref: ICD9:484.8 {source="MONDO:relatedTo", source="i2s"}
+xref: ICD9:486 {source="MONDO:equivalentTo", source="i2s"}
+xref: MedDRA:10035664
+xref: MedDRA:10035739
+xref: MESH:D011014 {source="EFO:0003106", source="MONDO:equivalentTo", source="DOID:552"}
+xref: MeSH:D011014
+xref: MONDO:0005249
+xref: NCIT:C3333 {source="EFO:0003106", source="MONDO:equivalentTo", source="DOID:552"}
+xref: NCIt:C3333
+xref: SCTID:233604007 {source="EFO:0003106", source="MONDO:equivalentTo", source="DOID:552"}
+xref: SNOMEDCT:233604007
+xref: UMLS:C0032285 {source="MONDO:equivalentTo", source="NCIT:C3333", source="DOID:552"}
+is_a: EFO:0000684 ! respiratory system disease
+property_value: closeMatch http://identifiers.org/snomedct/155548002
+property_value: closeMatch http://identifiers.org/snomedct/155552002
+property_value: closeMatch http://identifiers.org/snomedct/155558003
+property_value: closeMatch http://identifiers.org/snomedct/266391003
+property_value: closeMatch http://identifiers.org/snomedct/274103002
+property_value: closeMatch http://identifiers.org/snomedct/60363000
+property_value: exactMatch DOID:552
+property_value: exactMatch http://identifiers.org/mesh/D011014
+property_value: exactMatch http://identifiers.org/snomedct/233604007
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0032285
+property_value: exactMatch NCIT:C3333
+property_value: excluded_subClassOf MONDO:0005275 {source="DOID:552", source="MESH:D011014", source="MONDO:Redundant", source="NCIT:C3333/inferred", source="linkedlife/inferred", source="linkedlifedata/inferred"}
+property_value: gwas:trait "true" xsd:boolean
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
+
+[Term]
+id: EFO:0003821
+name: migraine disorder
+def: "A class of disabling primary headache disorders, characterized by recurrent unilateral pulsatile headaches. The two major subtypes are common migraine (without aura) and classic migraine (with aura or neurological symptoms). (International Classification of Headache Disorders, 2nd ed. Cephalalgia 2004: suppl 1)" []
+def: "A common, severe type of vascular headache often associated with increased sympathetic activity, resulting in nausea, vomiting, and light sensitivity." [NCIT:C89715]
+synonym: "Abdominal Migraine" EXACT []
+synonym: "Abdominal Migraines" EXACT []
+synonym: "Acute Confusional Migraine" EXACT []
+synonym: "Acute Confusional Migraines" EXACT []
+synonym: "Cervical Migraine Syndrome" EXACT []
+synonym: "Cervical Migraine Syndromes" EXACT []
+synonym: "Disorder, Migraine" EXACT []
+synonym: "Disorders, Migraine" EXACT []
+synonym: "Headache, Migraine" EXACT []
+synonym: "Headache, Sick" EXACT []
+synonym: "Headaches, Migraine" EXACT []
+synonym: "Headaches, Sick" EXACT []
+synonym: "Hemicrania Migraine" EXACT []
+synonym: "Hemicrania Migraines" EXACT []
+synonym: "Migraine" EXACT []
+synonym: "migraine" EXACT [NCIT:C89715]
+synonym: "migraine disorder" EXACT [DOID:6364]
+synonym: "migraine disorder" EXACT [] {comment="preferred label from MONDO"}
+synonym: "Migraine Disorders" EXACT []
+synonym: "Migraine Headache" EXACT []
+synonym: "migraine headache" EXACT [NCIT:C89715]
+synonym: "Migraine Headaches" EXACT []
+synonym: "Migraine Syndrome, Cervical" EXACT []
+synonym: "Migraine Syndromes, Cervical" EXACT []
+synonym: "Migraine Variant" EXACT []
+synonym: "migraine variant" EXACT [DOID:6364]
+synonym: "Migraine Variants" EXACT []
+synonym: "migraine with or without aura" EXACT [DOID:6364]
+synonym: "Migraine, Abdominal" EXACT []
+synonym: "Migraine, Acute Confusional" EXACT []
+synonym: "Migraine, Hemicrania" EXACT []
+synonym: "Migraines" EXACT []
+synonym: "Migraines, Abdominal" EXACT []
+synonym: "Migraines, Acute Confusional" EXACT []
+synonym: "Migraines, Hemicrania" EXACT []
+synonym: "Sick Headache" EXACT []
+synonym: "Sick Headaches" EXACT []
+synonym: "Status Migrainosus" EXACT []
+synonym: "Variant, Migraine" EXACT []
+synonym: "Variants, Migraine" EXACT []
+xref: DOID:6364 {source="EFO:0003821", source="MONDO:equivalentTo"}
+xref: ICD10:G43 {source="DOID:6364"}
+xref: ICD10:G43.9 {source="DOID:6364"}
+xref: ICD10:G43.909 {source="DOID:6364"}
+xref: ICD9:346 {source="EFO:0003821", source="DOID:6364"}
+xref: ICD9:346.9 {source="DOID:6364"}
+xref: MESH:D008881 {source="EFO:0003821", source="MONDO:equivalentTo", source="DOID:6364"}
+xref: MeSH:D008881
+xref: MONDO:0005277
+xref: NCIt:C113482
+xref: NCIT:C89715 {source="EFO:0003821", source="MONDO:equivalentTo", source="DOID:6364"}
+xref: NCIt:C89715
+xref: OMIM:157300
+xref: OMIM:613656
+xref: SNOMEDCT:193028008
+xref: SNOMEDCT:193030005
+xref: SNOMEDCT:230467008
+xref: SNOMEDCT:37796009
+xref: SNOMEDCT:75879005
+xref: SNOMEDCT:95653008
+is_a: EFO:0000618 ! nervous system disease
+property_value: closeMatch http://identifiers.org/snomedct/155046006
+property_value: closeMatch http://identifiers.org/snomedct/155048007
+property_value: closeMatch http://identifiers.org/snomedct/193028008
+property_value: closeMatch http://identifiers.org/snomedct/193030005
+property_value: closeMatch http://identifiers.org/snomedct/193036004
+property_value: closeMatch http://identifiers.org/snomedct/193041007
+property_value: closeMatch http://identifiers.org/snomedct/230467008
+property_value: closeMatch http://identifiers.org/snomedct/267699004
+property_value: closeMatch http://identifiers.org/snomedct/75879005
+property_value: closeMatch http://identifiers.org/snomedct/95653008
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0042331
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0149931
+property_value: exactMatch DOID:6364
+property_value: exactMatch http://identifiers.org/mesh/D008881
+property_value: exactMatch NCIT:C113482
+property_value: exactMatch NCIT:C89715
+property_value: gwas:trait "true" xsd:string
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
+
+[Term]
+id: EFO:0004149
+name: neuropathy
+def: "A disorder affecting the nervous system that manifests with pain, tingling, numbness, and/or muscle weakness." []
+xref: DOID:870
+xref: ICD10:G60
+xref: MedDRA:10029328
+xref: MedDRA:10062940
+xref: NCIt:C4731
+xref: OMIM:618184
+xref: OMIM:618186
+xref: SNOMEDCT:386033004
+is_a: EFO:0000618 ! nervous system disease
+property_value: gwas:trait "true" xsd:boolean
+
+[Term]
+id: EFO:0004255
+name: nephrotic syndrome
+def: "A collection of symptoms that include severe edema, proteinuria, and hypoalbuminemia; it is indicative of renal dysfunction." [NCIT:C34845]
+def: "A condition characterized by severe PROTEINURIA, greater than 3.5 g/day in an average adult. The substantial loss of protein in the urine results in complications such as HYPOPROTEINEMIA; generalized EDEMA; HYPERTENSION; and HYPERLIPIDEMIAS. Diseases associated with nephrotic syndrome generally cause chronic kidney dysfunction." []
+synonym: "nephrosis" RELATED [NCIT:C34845]
+synonym: "nephrotic syndrome" EXACT [] {comment="preferred label from MONDO"}
+synonym: "nephrotic syndrome" EXACT [NCIT:C34845]
+synonym: "nephrotic syndrome (acquired)" EXACT []
+synonym: "nephrotic syndromes" EXACT [MESH:D009404]
+synonym: "syndrome, nephrotic" EXACT [MESH:D009404]
+synonym: "syndromes, nephrotic" EXACT [MESH:D009404]
+xref: COHD:195314 {source="MONDO:equivalentTo"}
+xref: DOID:1184 {source="EFO:0004255", source="MONDO:equivalentTo"}
+xref: ICD10:N04 {source="DOID:1184"}
+xref: ICD9:581 {source="EFO:0004255", source="DOID:1184"}
+xref: ICD9:581.9 {source="MONDO:equivalentTo", source="i2s"}
+xref: MedDRA:10029164
+xref: MESH:D009404 {source="EFO:0004255", source="MONDO:equivalentTo", source="DOID:1184"}
+xref: MeSH:D009404
+xref: MONDO:0005377
+xref: NCIT:C34845 {source="EFO:0004255", source="MONDO:equivalentTo", source="DOID:1184"}
+xref: NCIt:C34845
+xref: OMIM:615861
+xref: OMIM:617783
+xref: OMIM:618176
+xref: OMIM:618177
+xref: OMIM:618178
+xref: OMIM:618594
+xref: SCTID:52254009 {source="EFO:0004255", source="MONDO:equivalentTo", source="DOID:1184"}
+xref: SNOMEDCT:52254009
+xref: UMLS:C0027726 {source="MONDO:equivalentTo", source="DOID:1184", source="NCIT:C34845"}
+is_a: SIRA:0000001 ! literature services
+property_value: closeMatch http://identifiers.org/snomedct/155851004
+property_value: closeMatch http://identifiers.org/snomedct/197611005
+property_value: exactMatch DOID:1184
+property_value: exactMatch http://identifiers.org/mesh/D009404
+property_value: exactMatch http://identifiers.org/snomedct/52254009
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0027726
+property_value: exactMatch NCIT:C34845
+property_value: gwas:trait "true" xsd:string
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0004280
+name: movement disorder
+def: "Neurological conditions resulting in abnormal voluntary or involuntary movement, which may impact the speed, fluency, quality and ease of movement." [NCIT:C116757]
+def: "Syndromes which feature DYSKINESIAS as a cardinal manifestation of the disease process. Included in this category are degenerative, hereditary, post-infectious, medication-induced, post-inflammatory, and post-traumatic conditions." []
+synonym: "movement disease" EXACT [MONDO:0003151]
+synonym: "movement disorder" EXACT [] {comment="preferred label from MONDO"}
+synonym: "movement disorders" EXACT [NCIT:C116757]
+synonym: "tardive dyskinesia" EXACT []
+xref: COHD:372604 {source="MONDO:equivalentTo"}
+xref: DOID:480 {source="MONDO:equivalentTo"}
+xref: ICD10:G25
+xref: ICD9:333.90 {source="MONDO:relatedTo", source="i2s"}
+xref: ICD9:333.99 {source="MONDO:relatedTo", source="i2s"}
+xref: MedDRA:10028035
+xref: MESH:D009069 {source="DOID:480", source="MONDO:equivalentTo", source="EFO:0004280"}
+xref: MeSH:D009069
+xref: MONDO:0005395
+xref: NCIT:C116757 {source="DOID:480", source="MONDO:equivalentTo", source="EFO:0004280", source="exact-label-match"}
+xref: NCIt:C116757
+xref: SCTID:60342002 {source="DOID:480", source="MONDO:equivalentTo", source="EFO:0004280"}
+xref: SNOMEDCT:60342002
+is_a: EFO:0000618 ! nervous system disease
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0026650
+property_value: exactMatch DOID:480
+property_value: exactMatch http://identifiers.org/mesh/D009069
+property_value: exactMatch http://identifiers.org/snomedct/60342002
+property_value: exactMatch NCIT:C116757
+property_value: gwas:trait "true" xsd:string
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0004292
+name: vaccination
+def: "A process that involves adding vaccine into a host (e.g., human, mouse) in vivo with the intent to invoke a protective immune response." []
+synonym: "active immunization" EXACT []
+xref: ICD10:Z24
+xref: ICD10:Z25
+xref: ICD10:Z26
+xref: ICD10:Z27
+xref: MeSH:D014611
+xref: NCIt:C15346
+xref: obo:VO_0000002
+xref: SNOMEDCT:33879002
+is_a: SIRA:0000001 ! literature services
+property_value: gwas:trait "true" xsd:string
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0004323
+name: mental process
+def: "Conceptual functions or thinking in all its forms." []
+synonym: "human information processing" EXACT []
+synonym: "Mental Processes" EXACT []
+synonym: "mental processes" EXACT []
+xref: MeSH:D008606
+xref: NCIt:C16840
+is_a: SIRA:0000001 ! literature services
+property_value: gwas:trait "true" xsd:string
+property_value: IAO:0000117 "Dani Welter" xsd:string
+
+[Term]
+id: EFO:0005251
+name: hypotension
+def: "Blood pressure that is abnormally low." [NCIT:P378]
+synonym: "hypotension" EXACT [MONDO:ambiguous]
+synonym: "hypotension (disease)" EXACT [https://github.com/monarch-initiative/mondo/issues/1030]
+synonym: "hypotensive disorder" EXACT [] {comment="preferred label from MONDO"}
+synonym: "low blood pressure" EXACT []
+xref: HP:0002615 {source="MONDO:otherHierarchy"}
+xref: ICD10:I95
+xref: ICD9:458 {source="EFO:0005251"}
+xref: ICD9:458.8 {source="MONDO:relatedTo", source="i2s"}
+xref: ICD9:458.9 {source="MONDO:equivalentTo", source="i2s"}
+xref: MedDRA:10021097
+xref: MedDRA:10021106
+xref: MESH:D007022 {source="MONDO:equivalentTo", source="EFO:0005251"}
+xref: MeSH:D007022
+xref: MONDO:0005468
+xref: NCIt:C3128
+xref: SCTID:45007003 {source="MONDO:equivalentTo", source="EFO:0005251"}
+xref: SNOMEDCT:45007003
+is_a: SIRA:0000001 ! literature services
+property_value: exactMatch http://identifiers.org/mesh/D007022
+property_value: exactMatch http://identifiers.org/snomedct/45007003
+property_value: exactMatch NCIT:C3128
+property_value: excluded_subClassOf MONDO:0004995 {source="EFO:0005251", source="MESH:D007022/inferred", source="linkedlifedata"}
+
+[Term]
+id: EFO:0005549
+name: diphtheria
+def: "A Gram-positive bacterial infection caused by Corynebacterium diphtheriae. It usually involves the oral cavity, pharynx, and nasal cavity. Patients develop pseudomembranes in the affected areas and manifest signs and symptoms of an upper respiratory infection. The diphtheria toxin may cause myocarditis, polyneuritis, and other systemic effects." [NCIT:P378]
+def: "A primary bacterial infectious disease that is characterized by sore throat, low fever, and an adherent membrane (a pseudomembrane) on the tonsils, pharynx, and/or nasal cavity. A milder form of diphtheria can be restricted to the skin. It is caused by Corynebacterium diphtheriae, an aerobic Gram-positive bacterium. Diphtheria toxin spreads through the bloodstream and can lead to potentially life-threatening complications that affect other organs of the body, such as the heart and kidneys." []
+subset: gard_rare {source="GARD:0001875"}
+subset: ordo_disease {source="Orphanet:1679"}
+synonym: "Corynebacterium infection" EXACT [DOID:11405]
+synonym: "corynebacterium infection" EXACT []
+synonym: "diphtheria" EXACT [] {comment="preferred label from MONDO"}
+xref: COHD:434568 {source="MONDO:equivalentTo"}
+xref: DOID:11405 {source="MONDO:equivalentTo", source="EFO:0005549"}
+xref: GARD:0001875 {source="MONDO:equivalentTo"}
+xref: ICD10:A36 {source="MONDO:equivalentTo"}
+xref: ICD10:A36.0 {source="ORDO:1679/btnt", source="Orphanet:1679"}
+xref: ICD10:A36.1 {source="ORDO:1679/btnt", source="Orphanet:1679"}
+xref: ICD10:A36.2 {source="ORDO:1679/btnt", source="Orphanet:1679"}
+xref: ICD10:A36.3 {source="ORDO:1679/btnt", source="MONDO:relatedTo", source="Orphanet:1679"}
+xref: ICD10:A36.8 {source="ORDO:1679/btnt", source="Orphanet:1679"}
+xref: ICD10:A36.9 {source="ORDO:1679/btnt", source="Orphanet:1679"}
+xref: ICD9:032 {source="EFO:0005549"}
+xref: ICD9:032.9 {source="MONDO:equivalentTo", source="i2s"}
+xref: MedDRA:10013023 {source="Orphanet:1679", source="ORDO:1679/e"}
+xref: MedDRA:10013025
+xref: MESH:D004165 {source="DOID:11405", source="MONDO:equivalentTo", source="Orphanet:1679", source="EFO:0005549", source="ORDO:1679/e"}
+xref: MeSH:D004165
+xref: MONDO:0005504
+xref: NCIT:C34541 {source="MONDO:equivalentTo", source="EFO:0005549"}
+xref: NCIt:C34541
+xref: Orphanet:1679 {source="MONDO:equivalentTo"}
+xref: SCTID:397428000 {source="MONDO:equivalentTo", source="EFO:0005549"}
+xref: SNOMEDCT:397428000
+xref: UMLS:C0012546 {source="MONDO:equivalentTo", source="NCIT:C34541", source="Orphanet:1679", source="ORDO:1679/e"}
+is_a: EFO:0000771 ! bacterial disease
+property_value: closeMatch http://identifiers.org/mesh/D003354
+property_value: closeMatch http://identifiers.org/snomedct/397434007
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0010153
+property_value: exactMatch DOID:11405
+property_value: exactMatch http://identifiers.org/meddra/10013023
+property_value: exactMatch http://identifiers.org/mesh/D004165
+property_value: exactMatch http://identifiers.org/snomedct/397428000
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0012546
+property_value: exactMatch NCIT:C34541
+property_value: exactMatch Orphanet:1679
+property_value: seeAlso https://rarediseases.info.nih.gov/diseases/1875/diphtheria xsd:anyURI {source="GARD:0001875"}
+
+[Term]
+id: EFO:0005577
+name: pharynx cancer
+def: "A primary or metastatic malignant neoplasm that affects the pharynx." [NCIT:C7545]
+synonym: "cancer of chordate pharynx" EXACT [MONDO:patterns/cancer]
+synonym: "cancer of pharynx" EXACT [MONDO:patterns/cancer]
+synonym: "chordate pharynx cancer" EXACT []
+synonym: "malignant chordate pharynx neoplasm" EXACT [MONDO:patterns/cancer]
+synonym: "malignant neoplasm of chordate pharynx" EXACT [MONDO:patterns/cancer]
+synonym: "malignant neoplasm of pharynx" EXACT [MONDO:patterns/cancer]
+synonym: "Malignant Pharyngeal Neoplasm" EXACT []
+synonym: "malignant pharyngeal neoplasm" EXACT [NCIT:C7545]
+synonym: "Malignant Pharyngeal Tumor" EXACT []
+synonym: "malignant pharyngeal tumor" EXACT [NCIT:C7545]
+synonym: "Malignant Pharynx Neoplasm" EXACT []
+synonym: "malignant pharynx neoplasm" EXACT [MONDO:patterns/cancer, NCIT:C7545]
+synonym: "Malignant Pharynx Tumor" EXACT []
+synonym: "malignant pharynx tumor" EXACT [NCIT:C7545]
+synonym: "Malignant Tumor of Pharynx" EXACT []
+synonym: "malignant tumor of pharynx" EXACT [NCIT:C7545]
+synonym: "Malignant Tumor of the Pharynx" EXACT []
+synonym: "malignant tumor of the pharynx" EXACT [NCIT:C7545]
+synonym: "pharyngeal cancer" RELATED [DOID:0060119]
+synonym: "pharyngeal neoplasm" EXACT [DOID:0060119]
+synonym: "pharynx cancer" EXACT [MONDO:patterns/location]
+synonym: "pharynx cancer" EXACT [] {comment="preferred label from MONDO"}
+synonym: "pharynx neoplasm" BROAD [DOID:0060119]
+xref: DOID:0060119 {source="EFO:0005577", source="MONDO:equivalentTo"}
+xref: MESH:D010610 {source="MONDO:equivalentTo", source="DOID:0060119"}
+xref: MONDO:0005517
+xref: NCIT:C7545 {source="EFO:0005577", source="MONDO:equivalentTo"}
+xref: NCIt:C7545
+xref: SNOMEDCT:363507003
+is_a: EFO:0000684 ! respiratory system disease
+property_value: closeMatch http://identifiers.org/snomedct/126685009
+property_value: closeMatch http://identifiers.org/snomedct/363507003
+property_value: closeMatch http://identifiers.org/snomedct/95001001
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0031347
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0153405
+property_value: exactMatch DOID:0060119
+property_value: exactMatch http://identifiers.org/mesh/D010610
+property_value: exactMatch NCIT:C7545
+property_value: gwas:trait "true" xsd:string
+
+[Term]
+id: EFO:0007167
+name: Bell's palsy
+def: "A facial paralysis resulting from dysfunction in the cranial nerve VII (facial nerve)." []
+def: "Partial or complete paralysis of the facial muscles of one side of a person's face. It is caused by damage to the seventh cranial nerve. It is usually temporary but it may recur." [NCIT:C26769]
+synonym: "Bell Palsy" EXACT []
+synonym: "Bell palsy" EXACT [DOID:12506]
+synonym: "Bell's (facial) palsy" EXACT [DOID:12506]
+synonym: "Bell's palsy" EXACT [] {comment="preferred label from MONDO"}
+synonym: "facial nerve palsy" EXACT [MONDO:patterns/location, NCIT:C26769]
+synonym: "facial nerve paralysis" EXACT [NCIT:C26769]
+synonym: "facial palsy" EXACT [NCIT:C26769]
+synonym: "nerve paralysis, Facial" EXACT [NCIT:C26769]
+synonym: "palsy of facial nerve" EXACT [MONDO:design_pattern]
+synonym: "paralysis Of Facial nerve" EXACT [NCIT:C26769]
+xref: COHD:374923 {source="MONDO:equivalentTo"}
+xref: DOID:12506 {source="MONDO:equivalentTo", source="EFO:0007167"}
+xref: GARD:0005906 {source="MONDO:equivalentTo"}
+xref: ICD10:G51.0 {source="DOID:12506", source="MONDO:equivalentTo"}
+xref: ICD9:351.0 {source="DOID:12506", source="MONDO:equivalentTo", source="i2s"}
+xref: MedDRA:10004223
+xref: MESH:D020330 {source="DOID:12506", source="MONDO:equivalentTo", source="EFO:0007167"}
+xref: MeSH:D020330
+xref: MONDO:0005665
+xref: NCIT:C26769 {source="MONDO:equivalentTo"}
+xref: SCTID:193093009 {source="DOID:12506", source="MONDO:equivalentTo"}
+xref: UMLS:C0376175 {source="DOID:12506", source="MONDO:equivalentTo", source="NCIT:C26769"}
+is_a: EFO:0000618 ! nervous system disease
+property_value: closeMatch http://identifiers.org/snomedct/155070005
+property_value: closeMatch http://identifiers.org/snomedct/267703001
+property_value: closeMatch http://identifiers.org/snomedct/79359001
+property_value: exactMatch DOID:12506
+property_value: exactMatch http://identifiers.org/mesh/D020330
+property_value: exactMatch http://identifiers.org/snomedct/193093009
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0376175
+property_value: exactMatch NCIT:C26769
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+
+[Term]
+id: EFO:0007227
+name: croup
+def: "A respiratory system infectious disease that involves inflammation, edema, and subsequent obstruction of the larynx, trachea, and bronchi. The disease is caused by viruses, bacteria, allergies and inhaled irritants. It is marked by episodes of difficult breathing and hoarse metallic cough in infants and young children. Croup is caused by parainfluenza virus (types 1 and 2), Influenza A and B viruses, Measles virus, adenovirus, respiratory syncytial virus, Staphylococcus and Streptococcus." []
+def: "Acute upper respiratory airways infection that results in the swelling of the larynx. It is usually caused by parainfluenza viruses. Signs include a characteristic barking cough and stridor." [NCIT:C26735]
+synonym: "acute laryngotracheitis" RELATED []
+synonym: "acute laryngotracheobronchitis" EXACT [DOID:9395, http://cmr.asm.org/content/16/2/242.full]
+synonym: "acute Obstructive Laryngitis" EXACT []
+synonym: "acute obstructive laryngitis" EXACT [DOID:9395, NCIT:C26735]
+synonym: "Croup" EXACT []
+synonym: "croup" EXACT [] {comment="preferred label from MONDO"}
+synonym: "Croup (disorder)" EXACT []
+synonym: "Croup syndrome" EXACT []
+synonym: "croup syndrome" EXACT [DOID:9395, MTHICD9_2006:464.4]
+synonym: "Laryngotracheobronchitis" EXACT []
+xref: COHD:260134 {source="MONDO:equivalentTo"}
+xref: DOID:9395 {source="EFO:0007227", source="MONDO:equivalentTo"}
+xref: ICD10:J05.0 {source="DOID:9395"}
+xref: ICD9:464.4 {source="MONDO:equivalentTo", source="DOID:9395", source="i2s"}
+xref: MedDRA:10011415
+xref: MESH:D003440 {source="EFO:0007227", source="MONDO:equivalentTo", source="DOID:9395"}
+xref: MeSH:D003440
+xref: MONDO:0005722
+xref: NCIT:C26735 {source="MONDO:equivalentTo", source="DOID:9395"}
+xref: SCTID:71186008 {source="MONDO:equivalentTo", source="DOID:9395"}
+xref: UMLS:C0010380 {source="MONDO:equivalentTo", source="DOID:9395", source="NCIT:C26735"}
+is_a: EFO:0000771 ! bacterial disease
+is_a: EFO:1002018 ! bronchial disease
+property_value: closeMatch http://identifiers.org/snomedct/155510007
+property_value: closeMatch http://identifiers.org/snomedct/195702002
+property_value: exactMatch DOID:9395
+property_value: exactMatch http://identifiers.org/mesh/D003440
+property_value: exactMatch http://identifiers.org/snomedct/71186008
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0010380
+property_value: exactMatch NCIT:C26735
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+
+[Term]
+id: EFO:0007292
+name: Guillain-Barre syndrome
+def: "An autoimmune disease of peripheral nervous system that causes body's immune system to attack part of the peripheral nervous system." []
+def: "Guillain-BarrC) syndrome (GBS) is the term used to describe a spectrum of rare post-infectious neuropathies that usually occur in otherwise healthy patients. GBS is clinically heterogeneous and encompasses acute inflammatory demyelinating polyradiculoneuropathy (AIDP), acute motor axonal neuropathy (AMAN) and acute motor-sensory axonal neuropathy (AMSAN), Miller-Fisher syndrome (MFS) and some other regional variants." [Orphanet:2103]
+subset: ordo_group_of_disorders {source="Orphanet:2103"}
+synonym: "acute autoimmune peripheral neuropathy" RELATED [GARD:0006554]
+synonym: "acute immune-mediated polyneuropathy" RELATED [GARD:0006554]
+synonym: "acute inf. polyneuritis" EXACT []
+synonym: "acute Infective Polyneuritis" EXACT []
+synonym: "acute infective polyneuritis" EXACT []
+synonym: "acute infective polyneuritis (disorder)" EXACT []
+synonym: "acute infective polyneuritis NOS (disorder)" EXACT []
+synonym: "acute inflammatory demyelinating polyneuropathy" RELATED [GARD:0006554]
+synonym: "acute inflammatory neuropathy" RELATED [GARD:0006554]
+synonym: "acute postinfectious polyneuropathy" EXACT [DOID:12842]
+synonym: "GBS" EXACT ABBREVIATION [Orphanet:2103]
+synonym: "Guillain Barre syndrome" EXACT [NCIT:C116345]
+synonym: "Guillain Barré syndrome" EXACT [NCIT:C116345]
+synonym: "Guillain-Barre Syndrome" EXACT []
+synonym: "Guillain-Barre syndrome" EXACT [] {comment="preferred label from MONDO"}
+synonym: "Guillain-Barre syndrome (disorder)" EXACT []
+synonym: "Guillain-Barre-Strohl syndrome" EXACT [Orphanet:2103]
+synonym: "Guillain-Barré syndrome" RELATED [Orphanet:2103]
+synonym: "Guillain-Barré-Strohl syndrome" EXACT [Orphanet:2103]
+synonym: "Infectious neuronitis (disorder)" EXACT []
+synonym: "Landry's ascending paralysis" RELATED [GARD:0006554]
+synonym: "Landry-Guillain-Barre-Strohl syndrome" RELATED [GARD:0006554]
+synonym: "post-infectious polyneuritis" NARROW [DOID:12842]
+synonym: "Post-infectious polyneuritis (disorder)" EXACT []
+synonym: "post-infective polyneuritis" NARROW [GARD:0006554]
+synonym: "Postinfectious polyneuritis" EXACT []
+synonym: "Postinfectious polyneuritis" NARROW [DOID:12842]
+xref: DOID:12842 {source="EFO:0007292", source="MONDO:equivalentTo"}
+xref: GARD:0006554 {source="MONDO:equivalentTo", source="Orphanet-shared"}
+xref: ICD10:G61.0 {source="DOID:12842", source="ORDO:2103/e", source="Orphanet:2103", source="MONDO:equivalentTo"}
+xref: MedDRA:10018767 {source="ORDO:2103/e", source="Orphanet:2103"}
+xref: MESH:D020275 {source="DOID:12842", source="ORDO:2103/e", source="Orphanet:2103", source="EFO:0007292", source="MONDO:equivalentTo"}
+xref: MeSH:D020275
+xref: MONDO:0016218
+xref: NCIT:C116345 {source="DOID:12842", source="MONDO:equivalentTo"}
+xref: Orphanet:2103 {source="MONDO:equivalentTo"}
+xref: SCTID:40956001 {source="MONDO:equivalentTo"}
+xref: UMLS:C0018378 {source="DOID:12842", source="ORDO:2103/e", source="Orphanet:2103", source="MONDO:equivalentTo", source="NCIT:C116345", source="OMIM:139393"}
+is_a: EFO:0000540 ! immune system disease
+is_a: EFO:0004149 ! neuropathy
+property_value: definition:citation http://www.orpha.net/ORDO/Orphanet_2103 xsd:string
+property_value: exactMatch DOID:12842
+property_value: exactMatch http://identifiers.org/meddra/10018767
+property_value: exactMatch http://identifiers.org/mesh/D020275
+property_value: exactMatch http://identifiers.org/snomedct/40956001
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0018378
+property_value: exactMatch NCIT:C116345
+property_value: exactMatch Orphanet:2103
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+
+[Term]
+id: EFO:0007328
+name: influenza
+def: "A viral infectious disease that results_in infection, located_in respiratory tract, has_material_basis_in Influenzavirus A, has_material_basis_in Influenzavirus B, or has_material_basis_in Influenzavirus C, which are transmitted_by droplet spread of oronasal secretions during coughing, sneezing, or talking from an infected person. It is a highly contagious disease that affects birds and mammals and has_symptom chills, has_symptom fever, has_symptom sore throat, has_symptom runny nose, has_symptom muscle pains, has_symptom severe headache, has_symptom cough, and has_symptom weakness." []
+def: "An acute viral infection of the respiratory tract, occurring in isolated cases, in epidemics, or in pandemics; it is caused by serologically different strains of viruses (influenzaviruses) designated A, B, and C, has a 3-day incubation period, and usually lasts for 3 to 10 days. It is marked by inflammation of the nasal mucosa, pharynx, and conjunctiva; headache; myalgia; often fever, chills, and prostration; and occasionally involvement of the myocardium or central nervous system." [NCIT:P378]
+synonym: "flu" EXACT [DOID:8469]
+synonym: "influenza" EXACT [] {comment="preferred label from MONDO"}
+synonym: "influenza infection" EXACT [MONDO:0005162]
+synonym: "influenza with non-respiratory manifestation" EXACT [DOID:8469]
+synonym: "Influenza with non-respiratory manifestation (disorder)" EXACT []
+synonym: "Influenza with other manifestations" EXACT [DOID:8469, ICD9CM_2006:487.8]
+synonym: "Influenza with other manifestations (disorder)" EXACT []
+synonym: "Influenza with other manifestations NOS (disorder)" EXACT []
+synonym: "Influenza, Human" EXACT []
+xref: COHD:320752 {source="MONDO:equivalentTo"}
+xref: DOID:8469 {source="MONDO:subClassOf", source="EFO:0007328", source="MONDO:equivalentTo", source="EFO:0001669"}
+xref: ICD10:J11.1 {source="DOID:8469"}
+xref: ICD9:487 {source="DOID:8469", source="EFO:0001669"}
+xref: ICD9:487.8 {source="MONDO:relatedTo", source="i2s"}
+xref: MedDRA:10022000
+xref: MESH:D007251 {source="DOID:8469", source="EFO:0007328", source="MONDO:equivalentTo"}
+xref: MeSH:D007251
+xref: MONDO:0005812
+xref: NCIT:C53482 {source="DOID:8469", source="MONDO:equivalentTo", source="EFO:0001669"}
+xref: NCIt:C53482
+xref: SCTID:61700007 {source="MONDO:equivalentTo"}
+xref: SNOMEDCT:6142004
+is_a: EFO:0000684 ! respiratory system disease
+property_value: closeMatch http://identifiers.org/snomedct/155559006
+property_value: closeMatch http://identifiers.org/snomedct/155562009
+property_value: closeMatch http://identifiers.org/snomedct/195931008
+property_value: closeMatch http://identifiers.org/snomedct/266353003
+property_value: closeMatch http://identifiers.org/snomedct/266393000
+property_value: closeMatch http://identifiers.org/snomedct/6142004
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0021400
+property_value: exactMatch DOID:8469
+property_value: exactMatch http://identifiers.org/mesh/D007251
+property_value: exactMatch http://identifiers.org/snomedct/61700007
+property_value: exactMatch NCIT:C53482
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+
+[Term]
+id: EFO:0007427
+name: pericarditis
+def: "A pericardium disease that is characterized by an inflammation of the pericardium and has_symptom chest pain." []
+def: "An inflammatory process affecting the pericardium." [NCIT:P378]
+synonym: "inflammation of pericardium" EXACT []
+synonym: "Pericarditis" EXACT []
+synonym: "pericarditis" EXACT [MONDO:ambiguous]
+synonym: "pericarditis (disease)" EXACT [] {comment="preferred label from MONDO"}
+synonym: "pericardium inflammation" EXACT [MONDO:patterns/inflammatory_disease_by_site]
+xref: DOID:1787 {source="EFO:0007427", source="MONDO:equivalentTo"}
+xref: HP:0001701 {source="MONDO:otherHierarchy"}
+xref: ICD10:I30
+xref: ICD10:I31
+xref: MedDRA:10034484
+xref: MESH:D010493 {source="EFO:0007427", source="MONDO:equivalentTo", source="DOID:1787"}
+xref: MeSH:D010493
+xref: MONDO:0005904
+xref: NCIT:C34915 {source="MONDO:equivalentTo", source="DOID:1787"}
+xref: SCTID:3238004 {source="MONDO:equivalentTo", source="DOID:1787"}
+xref: UMLS:C0031046 {source="NCIT:C34915", source="MONDO:equivalentTo", source="DOID:1787"}
+is_a: SIRA:0000001 ! literature services
+property_value: exactMatch DOID:1787
+property_value: exactMatch http://identifiers.org/mesh/D010493
+property_value: exactMatch http://identifiers.org/snomedct/3238004
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0031046
+property_value: exactMatch NCIT:C34915
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+
+[Term]
+id: EFO:0009431
+name: intestinal disease
+def: "A disease that affects the small or large intestine." []
+def: "A non-neoplastic or neoplastic disorder that affects the small or large intestine." [NCIT:C26801]
+synonym: "disease of intestine" EXACT [MONDO:patterns/location_top]
+synonym: "disease or disorder of intestine" EXACT []
+synonym: "disease, intestinal" RELATED [MESH:D007410]
+synonym: "diseases, intestinal" RELATED [MESH:D007410]
+synonym: "disorder of intestine" EXACT [MONDO:patterns/location_top]
+synonym: "intestinal disease" EXACT [MESH:D007410]
+synonym: "intestinal disease" EXACT [] {comment="preferred label from MONDO"}
+synonym: "intestinal disorder" EXACT [NCIT:C26801]
+synonym: "intestine disease" EXACT [MONDO:patterns/location]
+synonym: "intestine disease or disorder" EXACT [MONDO:design_pattern, MONDO:patterns/location]
+synonym: "intestine disorder" EXACT []
+xref: DOID:5295 {source="MONDO:equivalentTo", source="EFO:0000405"}
+xref: ICD10:A04
+xref: ICD10:A08
+xref: ICD10:K63
+xref: ICD10:K63.9 {source="DOID:5295"}
+xref: ICD9:520-579.99 {source="EFO:0000405"}
+xref: ICD9:560-569.99 {source="EFO:0000405"}
+xref: ICD9:564 {source="EFO:0000405"}
+xref: ICD9:564.4 {source="EFO:0000405"}
+xref: ICD9:569 {source="EFO:0000405"}
+xref: ICD9:569.4 {source="EFO:0000405"}
+xref: ICD9:569.49 {source="EFO:0000405"}
+xref: ICD9:569.89 {source="MONDO:relatedTo", source="i2s"}
+xref: ICD9:569.9 {source="MONDO:equivalentTo", source="i2s", source="DOID:5295"}
+xref: ICD9:570-579.99 {source="EFO:0000405"}
+xref: ICD9:575 {source="EFO:0000405"}
+xref: MESH:D007410 {source="MONDO:equivalentTo", source="DOID:5295", source="EFO:0000405"}
+xref: MONDO:0005020
+xref: NCIT:C26801 {source="MONDO:equivalentTo", source="DOID:5295"}
+xref: NCIt:C26801
+xref: SCTID:85919009 {source="MONDO:equivalentTo", source="DOID:5295"}
+is_a: SIRA:0000001 ! literature services
+property_value: closeMatch http://identifiers.org/mesh/D004066
+property_value: closeMatch http://identifiers.org/snomedct/155629009
+property_value: closeMatch http://identifiers.org/snomedct/197266001
+property_value: closeMatch http://identifiers.org/snomedct/266483008
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0021831
+property_value: exactMatch DOID:5295
+property_value: exactMatch http://identifiers.org/mesh/D007410
+property_value: exactMatch http://identifiers.org/snomedct/85919009
+property_value: exactMatch NCIT:C26801
+
+[Term]
+id: EFO:0009518
+name: complication
+def: "Any disease or disorder that occurs during the course of, or because of, another disease, treatment, or procedure. [ NCI ]" []
+xref: ICD10:T79
+xref: ICD10:T80
+xref: ICD10:T81
+xref: ICD10:T87
+xref: ICD10:T88
+xref: NCIt:C2959
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: EFO:0009538
+name: chronic inflammatory demyelinating polyneuropathy
+def: "Chronic inflammatory demyelinating polyneuropathy (CIDP) is a chronic monophasic, progressive or relapsing symmetric sensorimotor disorder characterized by progressive muscular weakness with impaired sensation, absent or diminished tendon reflexes and elevated cerebrospinal fluid (CSF) proteins." [Orphanet:2932]
+comment: Editor note: check this
+subset: ordo_disease {source="Orphanet:2932"}
+synonym: "chronic inflammatory demyelinating polyneuropathy" EXACT [] {comment="preferred label from MONDO"}
+synonym: "chronic inflammatory demyelinating polyneuropathy" EXACT [Orphanet:2932]
+synonym: "chronic inflammatory demyelinating polyradiculoneuropathy" EXACT [Orphanet:2932]
+synonym: "CIDP" EXACT ABBREVIATION [Orphanet:2932]
+synonym: "GBS" RELATED ABBREVIATION [OMIM:139393]
+synonym: "Guillain-Barre syndrome, familial" RELATED [OMIM:139393]
+synonym: "polyneuropathy, inflammatory demyelinating, acute" RELATED [OMIM:139393]
+synonym: "polyneuropathy, inflammatory demyelinating, chronic" RELATED [OMIM:139393]
+xref: GARD:0006102 {source="MONDO:equivalentTo", source="Orphanet-shared"}
+xref: ICD10:G61
+xref: ICD10:G61.8 {source="ORDO:2932/ntbt", source="Orphanet:2932"}
+xref: MedDRA:10057645 {source="ORDO:2932/e", source="Orphanet:2932"}
+xref: MedDRA:10077384
+xref: MONDO:0007691
+xref: OMIM:139393 {source="DOID:12842", source="MONDO:equivalentTo"}
+xref: Orphanet:2932 {source="MONDO:equivalentTo"}
+xref: SCTID:716723000 {source="MONDO:equivalentTo"}
+is_a: EFO:0000540 ! immune system disease
+is_a: EFO:0004149 ! neuropathy
+property_value: closeMatch http://identifiers.org/snomedct/155082001
+property_value: closeMatch http://identifiers.org/snomedct/267707000
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C1841700
+property_value: definition:citation GARD:0006102 xsd:string
+property_value: definition:citation SCTID:716723000 xsd:string
+property_value: exactMatch http://identifiers.org/meddra/10057645
+property_value: exactMatch http://identifiers.org/omim/139393
+property_value: exactMatch http://identifiers.org/snomedct/716723000
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0393819
+property_value: exactMatch Orphanet:2932
+
+[Term]
+id: EFO:0009579
+name: postpartum hemorrhage
+def: "Hemorrhage defined as a blood loss in excess of 500 mL after vaginal delivery or more than 1000 mL after a cesarean delivery. [ NCI ]" []
+synonym: "postpartum haemorrhage" EXACT []
+xref: ICD10:O72
+xref: MedDRA:10036418
+xref: NCIt:C92853
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: EFO:0010085
+name: anti-tetanus toxoid IgG measurement
+def: "Quantification of the IgG antibody isotype produced in response to tetanus toxoid exposure." []
+xref: PMID:31189108
+is_a: SIRA:0000001 ! literature services
+property_value: gwas:trait "true" xsd:string
+property_value: IAO:0000117 "Elliot Sollis" xsd:string
+
+[Term]
+id: EFO:0010634
+name: Snijders Blok-Fisher syndrome
+def: "An autosomal dominant neurodevelopmental disorder characterized by global developmental delay, hypotonia, intellectual disability, autistic features, impairments in speech and language skills, and dysmorphic features including abnormal, cupped, or prominent ears and ocular anomalies." []
+xref: OMIM:618604
+is_a: SIRA:0000001 ! literature services
+property_value: dc-creator "paola" xsd:string
+
+[Term]
+id: EFO:1000879
+name: corneal edema
+def: "An excessive amount of fluid in the cornea due to damage of the epithelium or endothelium causing decreased visual acuity." []
+def: "Hazy, swollen cornea." [NCIT:P378]
+synonym: "cornea edema" EXACT []
+synonym: "CORNEAL EDEMA" EXACT []
+synonym: "Corneal Edema" EXACT []
+synonym: "corneal edema" EXACT [] {comment="preferred label from MONDO"}
+synonym: "Corneal edema (disorder)" EXACT []
+synonym: "Corneal edema NOS (disorder)" EXACT []
+synonym: "Corneal edema, unspecified" EXACT []
+synonym: "Corneal oedema" EXACT []
+synonym: "corneal oedema" EXACT [DOID:11030]
+synonym: "Corneal oedema [Ambiguous]" EXACT []
+synonym: "Unspecified corneal edema (disorder)" EXACT []
+xref: COHD:380102 {source="MONDO:equivalentTo"}
+xref: DOID:11030 {source="MONDO:equivalentTo", source="EFO:1000879"}
+xref: ICD10:H18.20 {source="DOID:11030"}
+xref: ICD9:371.2 {source="DOID:11030", source="EFO:1000879"}
+xref: ICD9:371.20 {source="MONDO:equivalentTo", source="i2s", source="DOID:11030"}
+xref: MedDRA:10011007 {source="EFO:1000879"}
+xref: MedDRA:1001MedDRA\:1007
+xref: MedDRA:1001MedDRA\:1009
+xref: MESH:D015715 {source="MONDO:equivalentTo", source="DOID:11030", source="EFO:1000879"}
+xref: MeSH:D015715
+xref: MONDO:0006712
+xref: NCIt:C50508
+xref: SCTID:27194006 {source="MONDO:equivalentTo", source="DOID:11030", source="EFO:1000879"}
+xref: SNOMEDCT:27194006
+xref: UMLS:C0010037 {source="MONDO:equivalentTo", source="DOID:11030"}
+is_a: SIRA:0000001 ! literature services
+property_value: closeMatch http://identifiers.org/meddra/10011007
+property_value: closeMatch http://identifiers.org/snomedct/155158008
+property_value: closeMatch http://identifiers.org/snomedct/193811006
+property_value: closeMatch http://identifiers.org/snomedct/193812004
+property_value: closeMatch http://identifiers.org/snomedct/193817005
+property_value: exactMatch DOID:11030
+property_value: exactMatch http://identifiers.org/mesh/D015715
+property_value: exactMatch http://identifiers.org/snomedct/27194006
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0010037
+property_value: exactMatch NCIT:C50508
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+
+[Term]
+id: EFO:1001455
+name: auditory system disease
+def: "A disease involving the auditory system." [MONDO:DesignPattern]
+def: "Pathological processes of the ear, the hearing, and the equilibrium system of the body." []
+synonym: "auditory disease" EXACT [DOID:2742]
+synonym: "auditory system disease" EXACT [] {comment="preferred label from MONDO"}
+synonym: "auditory system disease" EXACT [MONDO:patterns/location]
+synonym: "auditory system disease or disorder" EXACT [MONDO:design_pattern, MONDO:patterns/location]
+synonym: "Destruction - ear drum" EXACT []
+synonym: "disease of auditory system" EXACT [MONDO:patterns/location_top]
+synonym: "disease or disorder of auditory system" EXACT []
+synonym: "disorder of auditory system" EXACT [MONDO:patterns/location_top]
+synonym: "disorder of ear" EXACT []
+synonym: "ear and mastoid disease" EXACT [DOID:2742]
+synonym: "ear disease" EXACT []
+synonym: "ear disorder" EXACT []
+synonym: "ear disorder NOS" EXACT []
+synonym: "otologic disease" EXACT []
+synonym: "otological disease" EXACT []
+synonym: "Unspecified disorder of ear" EXACT []
+xref: DOID:2742 {source="MONDO:equivalentTo"}
+xref: ICD10:H74
+xref: ICD10:H93
+xref: ICD10:H93.9 {source="DOID:2742"}
+xref: ICD10:H93.90 {source="DOID:2742"}
+xref: ICD9:388.9 {source="MONDO:relatedTo", source="DOID:2742"}
+xref: MeSH:D004427
+xref: MONDO:0002409
+xref: SCTID:362966006 {source="MONDO:equivalentTo"}
+is_a: EFO:0000618 ! nervous system disease
+property_value: closeMatch http://identifiers.org/mesh/D004427
+property_value: closeMatch http://identifiers.org/snomedct/155253008
+property_value: closeMatch http://identifiers.org/snomedct/155261003
+property_value: closeMatch http://identifiers.org/snomedct/194193002
+property_value: closeMatch http://identifiers.org/snomedct/194410006
+property_value: closeMatch http://identifiers.org/snomedct/267768008
+property_value: exactMatch DOID:2742
+property_value: exactMatch http://identifiers.org/snomedct/362966006
+property_value: IAO:0000117 "Gautier Koscielny" xsd:string
+
+[Term]
+id: EFO:1002018
+name: bronchial disease
+def: "A disease involving the bronchus." [MONDO:patterns/location_top]
+def: "a respiratory system disease that has its manifestation in the bronchus" []
+synonym: "bronchial disease" EXACT [] {comment="preferred label from MONDO"}
+synonym: "bronchial disorder" EXACT []
+synonym: "bronchial disorder" RELATED []
+synonym: "bronchospasm" EXACT [DOID:1176, NCIT:C34439]
+synonym: "bronchus disease" EXACT [MONDO:patterns/location]
+synonym: "bronchus disease or disorder" EXACT [MONDO:design_pattern, MONDO:patterns/location]
+synonym: "disease of bronchus" EXACT [MONDO:patterns/location_top]
+synonym: "disease or disorder of bronchus" EXACT []
+synonym: "disorder of bronchus" EXACT [MONDO:patterns/location_top]
+xref: COHD:256717 {source="MONDO:equivalentTo"}
+xref: DOID:1176 {source="MONDO:equivalentTo"}
+xref: ICD9:519.19 {source="linkedlifedata"}
+xref: MESH:D001982 {source="DOID:1176", source="MONDO:equivalentTo"}
+xref: MONDO:0001358
+xref: NCIT:C34439 {source="MONDO:equivalentTo"}
+xref: SCTID:41427001 {source="DOID:1176", source="MONDO:equivalentTo"}
+xref: UMLS:C0006261 {source="DOID:1176", source="MONDO:equivalentTo"}
+is_a: EFO:0000684 ! respiratory system disease
+property_value: exactMatch DOID:1176
+property_value: exactMatch http://identifiers.org/mesh/D001982
+property_value: exactMatch http://identifiers.org/snomedct/41427001
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0006261
+property_value: exactMatch NCIT:C34439
+property_value: IAO:0000117 "Sirarat Sarntivijai" xsd:string
+
+[Term]
+id: HP:0000969
+name: Edema
+alt_id: HP:0000990
+def: "An abnormal accumulation of fluid beneath the skin, or in one or more cavities of the body." [HPO:probinson]
+comment: Edema may be related to one or more of the following factors: 1) increased capillary hydrostatic pressure, 2) decreased osmotic pressure of plasma, 3) decreased tissue tension and lymphatic drainage, 4) increased osmotic pressure of tissue fluids, and 5) increased capillary permeability.
+synonym: "Dropsy" EXACT [ORCID:0000-0001-6908-9849]
+synonym: "Fluid retention" EXACT layperson []
+synonym: "Hydrops" EXACT []
+synonym: "Oedema" EXACT []
+synonym: "Water retention" EXACT layperson []
+xref: MSH:D004487
+xref: SNOMEDCT_US:20741006
+xref: SNOMEDCT_US:267038008
+xref: SNOMEDCT_US:423666004
+xref: SNOMEDCT_US:79654002
+xref: UMLS:C0013604
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: HP:0001787
+name: Abnormal delivery
+namespace: human_phenotype
+def: "An abnormality of the birth process." [HPO:probinson]
+synonym: "Abnormal delivery" EXACT layperson []
+synonym: "Delivery complication" EXACT layperson []
+xref: SNOMEDCT_US:274127000
+xref: UMLS:C0549629
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: HP:0002086
+name: Abnormality of the respiratory system
+def: "An abnormality of the respiratory system, which include the airways, lungs, and the respiratory muscles." [HPO:probinson]
+synonym: "Respiratory abnormality" EXACT []
+xref: UMLS:C4018871
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: HP:0002090
+name: Pneumonia
+namespace: human_phenotype
+def: "Inflammation of any part of the lung parenchyma." [HPO:probinson]
+synonym: "Pneumonia" EXACT layperson []
+xref: MSH:D011014
+xref: SNOMEDCT_US:233604007
+xref: UMLS:C0032285
+is_a: HP:0012252 ! Abnormal respiratory system morphology
+
+[Term]
+id: HP:0002315
+name: Headache
+namespace: human_phenotype
+alt_id: HP:0000266
+alt_id: HP:0001354
+def: "Cephalgia, or pain sensed in various parts of the head, not confined to the area of distribution of any nerve." [HPO:probinson, PMID:15304572]
+comment: Headache is one of the most common types of recurrent pain as well as one of the most frequent symptoms in neurology. In addition to occasional headaches, there are well-defined headache disorders that vary in incidence, prevalence and duration and can be divided into two broad categories. In secondary headache disorders, headaches are attributed to another condition, such as brain tumour or head injury; for the primary disorders the headache is not due to another condition.
+synonym: "Headache" EXACT layperson []
+synonym: "Headaches" EXACT layperson []
+xref: MSH:D006261
+xref: SNOMEDCT_US:25064002
+xref: UMLS:C0018681
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: HP:0002788
+name: Recurrent upper respiratory tract infections
+namespace: human_phenotype
+alt_id: HP:0001740
+alt_id: HP:0002784
+def: "An increased susceptibility to upper respiratory tract infections as manifested by a history of recurrent upper respiratory tract infections (running ears - otitis, sinusitis, pharyngitis, tonsillitis)." [HPO:probinson]
+synonym: "Frequent upper respiratory infections" EXACT []
+synonym: "Frequent upper respiratory tract infections" EXACT []
+synonym: "Recurrent colds" EXACT layperson [ORCID:0000-0002-6548-5200]
+synonym: "Recurrent upper respiratory and lower respiratory infections" EXACT []
+synonym: "Recurrent upper respiratory infection" EXACT []
+synonym: "Recurrent upper respiratory infections" EXACT []
+synonym: "Recurrent URI" EXACT abbreviation []
+synonym: "Upper respiratory tract infections" EXACT []
+synonym: "Upper respiratory tract infections, recurrent" EXACT [HPO:skoehler]
+xref: SNOMEDCT_US:195708003
+xref: UMLS:C0581381
+is_a: HP:0012252 ! Abnormal respiratory system morphology
+
+[Term]
+id: HP:0002863
+name: Myelodysplasia
+namespace: human_phenotype
+alt_id: HP:0004832
+alt_id: HP:0006730
+def: "Clonal hematopoietic stem cell disorders characterized by dysplasia (ineffective production) in one or more hematopoietic cell lineages, leading to anemia and cytopenia." [HPO:probinson]
+synonym: "Hypoplastic myelodysplasia" RELATED []
+synonym: "Myelodysplastic syndrome" EXACT []
+xref: MSH:D009190
+xref: SNOMEDCT_US:109995007
+xref: SNOMEDCT_US:128623006
+xref: SNOMEDCT_US:188736006
+xref: UMLS:C1851971
+xref: UMLS:C3463824
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: HP:0004326
+name: Cachexia
+namespace: human_phenotype
+def: "Severe weight loss, wasting of muscle, loss of appetite, and general debility related to a chronic disease." [HPO:probinson]
+synonym: "Wasting syndrome" EXACT layperson [ORCID:0000-0001-5208-3432]
+xref: MSH:D002100
+xref: SNOMEDCT_US:238108007
+xref: SNOMEDCT_US:285384003
+xref: UMLS:C0006625
+is_a: SIRA:0000001 ! literature services
+created_by: peter
+creation_date: 2008-02-27T03:23:00Z
+
+[Term]
+id: HP:0011951
+name: Aspiration pneumonia
+namespace: human_phenotype
+def: "Pneumonia due to the aspiration (breathing in) of food, liquid, or gastric contents into the upper respiratory tract." [HPO:probinson]
+xref: MSH:D011015
+xref: SNOMEDCT_US:422588002
+xref: UMLS:C0032290
+is_a: HP:0002090 ! Pneumonia
+created_by: peter
+creation_date: 2012-06-21T08:40:03Z
+
+[Term]
+id: HP:0012252
+name: Abnormal respiratory system morphology
+namespace: human_phenotype
+def: "A structural anomaly of the respiratory system." [HPO:probinson]
+xref: Fyler:4235
+xref: UMLS:C4022992
+is_a: HP:0002086 ! Abnormality of the respiratory system
+created_by: peter
+creation_date: 2013-04-07T09:11:09Z
+
+[Term]
+id: HP:0012398
+name: Peripheral edema
+namespace: human_phenotype
+def: "An abnormal accumulation of interstitial fluid in the soft tissues of the limbs." [HPO:probinson]
+synonym: "Peripheral oedema" EXACT uk_spelling []
+xref: SNOMEDCT_US:271809000
+xref: SNOMEDCT_US:82014009
+xref: UMLS:C0085649
+is_a: HP:0000969 ! Edema
+created_by: peter
+creation_date: 2013-11-08T08:09:45Z
+
+[Term]
+id: HP:0020090
+name: Post-vaccination polio
+def: "Infection with live attenuated polio vaccine following vaccination. This is an extreemely rare event that may indicate immunocompromise." [PMID:25285130]
+is_a: SIRA:0000001 ! literature services
+property_value: http://purl.org/dc/elements/1.1/date 2019-04-08T17:38:52Z xsd:dateTime
+created_by: robinp
+
+[Term]
+id: HP:0025040
+name: Thalamic edema
+def: "Swelling within the thalamus due to the accumulation of fluid." []
+synonym: "Edema of the thalamus" EXACT []
+synonym: "Oedema of the thalamus" EXACT []
+synonym: "Thalamic oedema" EXACT []
+is_a: SIRA:0000001 ! literature services
+property_value: http://purl.org/dc/elements/1.1/date 2016-09-25T14:11:37Z xsd:dateTime
+created_by: HPO:probinson
+
+[Term]
+id: HP:0030915
+name: Cerebellar edema
+def: "Swelling from fluid accumulation (serous fluid infiltration into the interstitial space) in the cerebellum." []
+comment: Cerebellar edama can manifest on magnetic resonance imaging as hyperintense T2 and FLAIR signals, which do not show restricted diffusion.
+synonym: "Cerebellar oedema" EXACT []
+synonym: "Edema of the cerebellum" EXACT []
+synonym: "Oedema of the cerebellum" EXACT []
+is_a: SIRA:0000001 ! literature services
+created_by: HPO:probinson
+
+[Term]
+id: HP:0100845
+name: Anaphylactic shock
+def: "An acute hypersensitivity reaction due to exposure to a previously encountered antigen." [HPO:probinson]
+comment: Anaphylaxis may lead to rapidly progressing urticaria, respiratory distress, vascular collapse, systemic shock, and death if untreated.
+synonym: "Anaphylaxis" EXACT layperson []
+xref: MSH:D000707
+xref: SNOMEDCT_US:39579001
+xref: UMLS:C0002792
+is_a: SIRA:0000001 ! literature services
+created_by: doelkens
+creation_date: 2011-06-09T06:54:40Z
+
+[Term]
+id: MONDO:0005395
+name: movement disorder
+def: "Neurological conditions resulting in abnormal voluntary or involuntary movement, which may impact the speed, fluency, quality and ease of movement." [NCIT:C116757]
+synonym: "movement disease" EXACT [MONDO:0003151]
+synonym: "movement disorders" EXACT [NCIT:C116757]
+xref: COHD:372604 {source="MONDO:equivalentTo"}
+xref: DOID:480 {source="MONDO:equivalentTo"}
+xref: EFO:0004280 {source="MONDO:equivalentTo"}
+xref: ICD9:333.90 {source="MONDO:relatedTo", source="i2s"}
+xref: ICD9:333.99 {source="MONDO:relatedTo", source="i2s"}
+xref: MESH:D009069 {source="DOID:480", source="MONDO:equivalentTo", source="EFO:0004280"}
+xref: NCIT:C116757 {source="DOID:480", source="MONDO:equivalentTo", source="EFO:0004280", source="exact-label-match"}
+xref: SCTID:60342002 {source="DOID:480", source="MONDO:equivalentTo", source="EFO:0004280"}
+is_a: SIRA:0000001 ! literature services
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0026650
+property_value: exactMatch DOID:480
+property_value: exactMatch http://identifiers.org/mesh/D009069
+property_value: exactMatch http://identifiers.org/snomedct/60342002
+property_value: exactMatch NCIT:C116757
+
+[Term]
+id: MONDO:0005812
+name: influenza
+def: "An acute viral infection of the respiratory tract, occurring in isolated cases, in epidemics, or in pandemics; it is caused by serologically different strains of viruses (influenzaviruses) designated A, B, and C, has a 3-day incubation period, and usually lasts for 3 to 10 days. It is marked by inflammation of the nasal mucosa, pharynx, and conjunctiva; headache; myalgia; often fever, chills, and prostration; and occasionally involvement of the myocardium or central nervous system." [NCIT:P378]
+synonym: "flu" EXACT [DOID:8469]
+synonym: "influenza infection" EXACT [MONDO:0005162]
+synonym: "influenza with non-respiratory manifestation" EXACT [DOID:8469]
+synonym: "Influenza with other manifestations" EXACT [DOID:8469, ICD9CM_2006:487.8]
+xref: COHD:320752 {source="MONDO:equivalentTo"}
+xref: DOID:8469 {source="MONDO:subClassOf", source="EFO:0007328", source="MONDO:equivalentTo", source="EFO:0001669"}
+xref: EFO:0007328 {source="MONDO:equivalentTo"}
+xref: ICD10:J11.1 {source="DOID:8469"}
+xref: ICD9:487 {source="DOID:8469", source="EFO:0001669"}
+xref: ICD9:487.8 {source="MONDO:relatedTo", source="i2s"}
+xref: MESH:D007251 {source="DOID:8469", source="EFO:0007328", source="MONDO:equivalentTo"}
+xref: NCIT:C53482 {source="DOID:8469", source="MONDO:equivalentTo", source="EFO:0001669"}
+xref: SCTID:61700007 {source="MONDO:equivalentTo"}
+is_a: SIRA:0000001 ! literature services
+property_value: closeMatch http://identifiers.org/snomedct/155559006
+property_value: closeMatch http://identifiers.org/snomedct/155562009
+property_value: closeMatch http://identifiers.org/snomedct/195931008
+property_value: closeMatch http://identifiers.org/snomedct/266353003
+property_value: closeMatch http://identifiers.org/snomedct/266393000
+property_value: closeMatch http://identifiers.org/snomedct/6142004
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0021400
+property_value: exactMatch DOID:8469
+property_value: exactMatch http://identifiers.org/mesh/D007251
+property_value: exactMatch http://identifiers.org/snomedct/61700007
+property_value: exactMatch NCIT:C53482
+
+[Term]
+id: MONDO:0011088
+name: congenital myasthenic syndrome 1A
+def: "Any congenital myasthenic syndrome in which the cause of the disease is a mutation in the CHRNA1 gene." [MONDO:patterns/disease_series_by_gene]
+synonym: "CHRNA1 congenital myasthenic syndrome" EXACT [MONDO:design_pattern, MONDO:patterns/disease_series_by_gene]
+synonym: "CMS IIa" EXACT [DOID:0110663]
+synonym: "Cms IIa" RELATED [OMIM:601462]
+synonym: "Cms IIa, formerly" RELATED [OMIM:601462]
+synonym: "CMS1A" EXACT ABBREVIATION [DOID:0110663, MONDO:Lexical, OMIM:601462]
+synonym: "congenital myasthenic syndrome 1A, slow-channel" EXACT [DOID:0110663]
+synonym: "congenital myasthenic syndrome caused by mutation in CHRNA1" EXACT [MONDO:design_pattern]
+synonym: "congenital myasthenic syndrome type 1A" EXACT [DOID:0110663, MONDORULE:4]
+synonym: "congenital myasthenic syndrome type IIa" EXACT [DOID:0110663]
+synonym: "myasthenic syndrome, congenital, 1A, slow-channel" RELATED [MONDO:Lexical, OMIM:601462]
+synonym: "myasthenic syndrome, congenital, type IIa" RELATED [OMIM:601462]
+synonym: "myasthenic syndrome, congenital, type IIa, formerly" RELATED [OMIM:601462]
+xref: DOID:0110663 {source="MONDO:equivalentTo"}
+xref: OMIM:601462 {source="MONDO:equivalentTo", source="DOID:0110663"}
+is_a: MONDO:0018940 ! congenital myasthenic syndrome
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C0751885
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C2931107
+property_value: exactMatch DOID:0110663
+property_value: exactMatch http://identifiers.org/omim/601462
+
+[Term]
+id: MONDO:0012157
+name: congenital myasthenic syndrome 4C
+def: "A congenital myasthenic syndrome characterized by autosomal recessive inheritance of postsynaptic neuromuscular junction defects, early-onset muscle weakness, and low amplitude of the miniature endplate potential and current that has material basis in homozygous or compound heterozygous mutation in the CHRNE gene on chromosome 17p13." [DOID:0110679, PMID:25792100, PMID:8957026]
+synonym: "CMS Id" EXACT [DOID:0110679]
+synonym: "Cms Id" RELATED [OMIM:608931]
+synonym: "Cms Id, formerly" RELATED [OMIM:608931]
+synonym: "CMS1D" EXACT ABBREVIATION [DOID:0110679]
+synonym: "CMS4C" EXACT ABBREVIATION [DOID:0110679, MONDO:Lexical, OMIM:608931]
+synonym: "congenital myasthenic syndrome 4C associated with acetylcholine receptor deficiency" EXACT [DOID:0110679]
+synonym: "congenital myasthenic syndrome associated with acetylcholine receptor deficiency" RELATED [GARD:0010108]
+synonym: "congenital myasthenic syndrome type 4C" EXACT [DOID:0110679, MONDORULE:4]
+synonym: "congenital myasthenic syndrome type Id" EXACT [DOID:0110679]
+synonym: "familial infantile myasthenia 1" EXACT [DOID:0110679]
+synonym: "FIM1" EXACT ABBREVIATION [DOID:0110679]
+synonym: "myasthenia, familial infantile, 1" RELATED [OMIM:608931]
+synonym: "myasthenia, familial infantile, 1, formerly" RELATED [OMIM:608931]
+synonym: "myasthenic syndrome, congenital, 4C, associated with acetylcholine receptor deficiency" RELATED [MONDO:Lexical, OMIM:608931]
+synonym: "myasthenic syndrome, congenital, associated with acetylcholine receptor deficiency" RELATED [GARD:0010108]
+synonym: "myasthenic syndrome, congenital, type Id" RELATED [OMIM:608931]
+xref: DOID:0110679 {source="MONDO:equivalentTo"}
+xref: GARD:0010108 {source="shared-umls-xref", source="MONDO:equivalentTo"}
+xref: OMIM:608931 {source="DOID:0110679", source="MONDO:equivalentTo"}
+is_a: MONDO:0018940 ! congenital myasthenic syndrome
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C1837091
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C1837092
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C1837094
+property_value: exactMatch DOID:0110679
+property_value: exactMatch http://identifiers.org/omim/608931
+
+[Term]
+id: MONDO:0012518
+name: congenital myasthenic syndrome 12
+def: "Any congenital myasthenic syndromes with glycosylation defect in which the cause of the disease is a mutation in the GFPT1 gene." [MONDO:patterns/disease_series_by_gene]
+synonym: "CMS12" EXACT ABBREVIATION [DOID:0110660, MONDO:Lexical, OMIM:610542]
+synonym: "congenital myasthenia 12 with tubular aggregates" EXACT [DOID:0110660]
+synonym: "congenital myasthenic syndrome type 12" EXACT [DOID:0110660, MONDORULE:2]
+synonym: "congenital myasthenic syndromes with glycosylation defect caused by mutation in GFPT1" EXACT [MONDO:design_pattern]
+synonym: "GFPT1 congenital myasthenic syndromes with glycosylation defect" EXACT [MONDO:design_pattern, MONDO:patterns/disease_series_by_gene]
+synonym: "myasthenic syndrome, congenital, 12" RELATED [MONDO:Lexical, OMIM:610542]
+synonym: "myasthenic syndrome, congenital, type 12" EXACT [MONDORULE:2, OMIM:610542]
+synonym: "myasthenic syndrome, congenital, with tubular aggregates 1" RELATED [OMIM:610542]
+xref: DOID:0110660 {source="MONDO:equivalentTo"}
+xref: OMIM:610542 {source="MONDO:equivalentTo", source="DOID:0110660"}
+is_a: MONDO:0018940 ! congenital myasthenic syndrome
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C1864649
+property_value: closeMatch http://linkedlifedata.com/resource/umls/id/C3552335
+property_value: exactMatch DOID:0110660
+property_value: exactMatch http://identifiers.org/omim/610542
+
+[Term]
+id: MONDO:0013883
+name: congenital myasthenic syndrome 13
+def: "Any congenital myasthenic syndromes with glycosylation defect in which the cause of the disease is a mutation in the DPAGT1 gene." [MONDO:patterns/disease_series_by_gene]
+synonym: "CMS13" EXACT ABBREVIATION [DOID:0110676, MONDO:Lexical, OMIM:614750]
+synonym: "CMSTA2" EXACT ABBREVIATION [DOID:0110676]
+synonym: "congenital myasthenic syndrome 13 with tubular aggregates" EXACT [DOID:0110676]
+synonym: "congenital myasthenic syndrome type 13" EXACT [DOID:0110676, MONDORULE:2]
+synonym: "congenital myasthenic syndrome with tubular aggregates 2" EXACT [DOID:0110676]
+synonym: "congenital myasthenic syndromes with glycosylation defect caused by mutation in DPAGT1" EXACT [MONDO:design_pattern]
+synonym: "DPAGT1 congenital myasthenic syndromes with glycosylation defect" EXACT [MONDO:design_pattern, MONDO:patterns/disease_series_by_gene]
+synonym: "myasthenic syndrome, congenital, 13" RELATED [MONDO:Lexical, OMIM:614750]
+synonym: "myasthenic syndrome, congenital, type 13" EXACT [MONDORULE:2, OMIM:614750]
+synonym: "myasthenic syndrome, congenital, with tubular aggregates 2" RELATED [OMIM:614750]
+xref: DOID:0110676 {source="MONDO:equivalentTo"}
+xref: OMIM:614750 {source="DOID:0110676", source="MONDO:equivalentTo"}
+xref: UMLS:C3553645 {source="OMIM:614750", source="NCBI:mim2gene_medline", source="MONDO:equivalentTo"}
+is_a: MONDO:0018940 ! congenital myasthenic syndrome
+property_value: exactMatch DOID:0110676
+property_value: exactMatch http://identifiers.org/omim/614750
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C3553645
+
+[Term]
+id: MONDO:0014584
+name: congenital myasthenic syndrome 3B
+def: "A congenital myasthenic syndrome characterized by autosomal recessive inheritance of postsynaptic neuromuscular junction defects resulting in rapid decay in endplate current and a failure to reach the threshold for depolarization and early onset progressive muscular weakness that has material basis in homozygous or compound heterozygous mutation in the CHRND gene on chromosome 2q37." [DOID:0110665, PMID:11435464, PMID:25792100]
+synonym: "CMS3B" EXACT ABBREVIATION [DOID:0110665, MONDO:Lexical, OMIM:616322]
+synonym: "congenital myasthenic syndrome 3B, fast-channel" EXACT [DOID:0110665]
+synonym: "congenital myasthenic syndrome type 3B" EXACT [DOID:0110665, MONDORULE:4]
+synonym: "myasthenic syndrome, congenital, 3B, FAST-channel" RELATED [MONDO:Lexical, OMIM:616322]
+xref: DOID:0110665 {source="MONDO:equivalentTo"}
+xref: OMIM:616322 {source="DOID:0110665", source="MONDO:equivalentTo"}
+xref: UMLS:C4225371 {source="NCBI:mim2gene_medline", source="MONDO:equivalentTo"}
+is_a: MONDO:0018940 ! congenital myasthenic syndrome
+property_value: exactMatch DOID:0110665
+property_value: exactMatch http://identifiers.org/omim/616322
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C4225371
+
+[Term]
+id: MONDO:0018940
+name: congenital myasthenic syndrome
+def: "Congenital myasthenic syndrome (CMS) is a group of genetic disorders of impaired neuromuscular transmission at the motor endplate characterized by fatigable muscle weakness." [Orphanet:590]
+subset: gard_rare {source="GARD:0011902"}
+subset: ordo_disease {source="Orphanet:590"}
+synonym: "CMS" EXACT ABBREVIATION [Orphanet:590]
+synonym: "congenital MG" RELATED [GARD:0000098]
+synonym: "congenital myasthenia" RELATED [GARD:0011902]
+synonym: "erb-Goldflam syndrome" RELATED [GARD:0000098]
+synonym: "familial limb-girdle myasthenia" EXACT [DOID:3635]
+synonym: "myasthenia gravis congenital" RELATED [GARD:0000098]
+synonym: "myasthenia gravis pseudoparalytica" RELATED [GARD:0000098]
+synonym: "myasthenic syndrome, congenital" EXACT [OMIMPS:601462]
+xref: DOID:3635 {source="MONDO:equivalentTo"}
+xref: GARD:0000098 {source="MONDO:equivalentTo"}
+xref: GARD:0011902 {source="MONDO:equivalentTo"}
+xref: ICD10:G70.2 {source="ORDO:590/specific", source="ORDO:590/e", source="Orphanet:590"}
+xref: ICD9:358.00 {source="MONDO:relatedTo", source="i2s"}
+xref: ICD9:V17.89 {source="MONDO:relatedTo", source="i2s"}
+xref: MESH:D020294 {source="ORDO:590/e", source="MONDO:equivalentTo", source="DOID:3635", source="Orphanet:590"}
+xref: NCIT:C84647 {source="MONDO:equivalentTo", source="DOID:3635"}
+xref: OMIMPS:601462 {source="MONDO:equivalentTo", source="DOID:3635"}
+xref: Orphanet:590 {source="MONDO:equivalentTo", source="DOID:3635"}
+xref: SCTID:230672006 {source="MONDO:equivalentTo", source="DOID:3635"}
+xref: UMLS:C0751882 {source="NCIT:C84647", source="ORDO:590/e", source="MONDO:equivalentTo", source="DOID:3635", source="Orphanet:590"}
+is_a: SIRA:0000001 ! literature services
+property_value: exactMatch DOID:3635
+property_value: exactMatch http://identifiers.org/mesh/D020294
+property_value: exactMatch http://identifiers.org/snomedct/230672006
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0751882
+property_value: exactMatch NCIT:C84647
+property_value: exactMatch Orphanet:590
+property_value: excluded_subClassOf MONDO:0020260 {source="Orphanet:590", source="https://github.com/Orphanet/ORDO/issues/17"}
+property_value: seeAlso https://rarediseases.info.nih.gov/diseases/11902/congenital-myasthenic-syndrome xsd:anyURI {source="GARD:0011902"}
+
+[Term]
+id: MONDO:0032830
+name: snijders blok-fisher syndrome
+synonym: "SNIBFIS" RELATED ABBREVIATION [OMIM:618604]
+synonym: "SNIJDERS BLOK-FISHER SYNDROME" RELATED [OMIM:618604]
+xref: OMIM:618604 {source="MONDO:equivalentTo"}
+is_a: SIRA:0000001 ! literature services
+property_value: exactMatch http://identifiers.org/omim/618604
+
+[Term]
+id: MP:0001914
+name: hemorrhage
+namespace: MPheno.ontology
+alt_id: MP:0001635
+def: "loss of blood from the vascular compartment to the exterior or into nonvascular body space as a result of rupture or severance of the blood vessels" [ISBN:0-683-40008-8]
+subset: IMPC_Prenatal
+subset: Sanger_Terms
+synonym: "bleeding" EXACT []
+synonym: "haemorrhage" EXACT []
+is_a: SIRA:0000001 ! literature services
+
+[Term]
+id: NCIT:C155831
+name: Nasopharyngeal Swab Specimen
+def: "A biospecimen collected from the back of the throat by swabbing." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Nasopharyngeal Swab" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="caDSR"}
+synonym: "Nasopharyngeal Swab Specimen" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "NPH" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="caDSR"}
+is_a: SIRA:0000001 ! literature services
+property_value: NCIT:NHC0 "C155831" xsd:string
+property_value: NCIT:P106 "Body Substance" xsd:string
+property_value: NCIT:P108 "Nasopharyngeal Swab Specimen" xsd:string
+property_value: NCIT:P207 "C0444192" xsd:string
+
+[Term]
+id: Orphanet:590
+name: Congenital myasthenic syndromes
+def: "Congenital myasthenic syndrome (CMS) is a group of genetic disorders of impaired neuromuscular transmission at the motor endplate characterized by fatigable muscle weakness." [Orphanet:590]
+subset: gard_rare {source="GARD:0011902"}
+subset: ordo_disease {source="Orphanet:590"}
+synonym: "CMS" EXACT ABBREVIATION [Orphanet:590]
+synonym: "congenital MG" RELATED [GARD:0000098]
+synonym: "congenital myasthenia" RELATED [GARD:0011902]
+synonym: "congenital myasthenic syndrome" EXACT [] {comment="preferred label from MONDO"}
+synonym: "erb-Goldflam syndrome" RELATED [GARD:0000098]
+synonym: "familial limb-girdle myasthenia" EXACT [DOID:3635]
+synonym: "myasthenia gravis congenital" RELATED [GARD:0000098]
+synonym: "myasthenia gravis pseudoparalytica" RELATED [GARD:0000098]
+synonym: "myasthenic syndrome, congenital" EXACT [OMIMPS:601462]
+xref: DOID:3635 {source="MONDO:equivalentTo"}
+xref: GARD:0000098 {source="MONDO:equivalentTo"}
+xref: GARD:0011902 {source="MONDO:equivalentTo"}
+xref: ICD10:G70.2 {source="ORDO:590/specific", source="ORDO:590/e", source="Orphanet:590"}
+xref: ICD9:358.00 {source="MONDO:relatedTo", source="i2s"}
+xref: ICD9:V17.89 {source="MONDO:relatedTo", source="i2s"}
+xref: MESH:D020294 {source="ORDO:590/e", source="MONDO:equivalentTo", source="DOID:3635", source="Orphanet:590"}
+xref: MeSH:D020294
+xref: MONDO:0018940
+xref: NCIT:C84647 {source="MONDO:equivalentTo", source="DOID:3635"}
+xref: OMIM:254190
+xref: OMIM:254210
+xref: OMIM:254300
+xref: OMIM:601462
+xref: OMIM:603034
+xref: OMIM:605809
+xref: OMIM:608930
+xref: OMIM:608931
+xref: OMIM:610542
+xref: OMIM:614198
+xref: OMIM:614750
+xref: OMIM:615120
+xref: OMIM:616040
+xref: OMIM:616224
+xref: OMIM:616227
+xref: OMIM:616228
+xref: OMIM:616304
+xref: OMIM:616313
+xref: OMIM:616314
+xref: OMIM:616321
+xref: OMIM:616322
+xref: OMIM:616323
+xref: OMIM:616324
+xref: OMIM:616325
+xref: OMIM:616326
+xref: OMIM:616330
+xref: OMIM:616720
+xref: OMIMPS:601462 {source="MONDO:equivalentTo", source="DOID:3635"}
+xref: SCTID:230672006 {source="MONDO:equivalentTo", source="DOID:3635"}
+xref: UMLS:C0751882 {source="NCIT:C84647", source="ORDO:590/e", source="MONDO:equivalentTo", source="DOID:3635", source="Orphanet:590"}
+is_a: EFO:0002970 ! muscular disease
+is_a: EFO:0004149 ! neuropathy
+property_value: exactMatch DOID:3635
+property_value: exactMatch http://identifiers.org/mesh/D020294
+property_value: exactMatch http://identifiers.org/snomedct/230672006
+property_value: exactMatch http://linkedlifedata.com/resource/umls/id/C0751882
+property_value: exactMatch NCIT:C84647
+property_value: exactMatch Orphanet:590
+property_value: excluded_subClassOf MONDO:0020260 {source="Orphanet:590", source="https://github.com/Orphanet/ORDO/issues/17"}
+property_value: seeAlso https://rarediseases.info.nih.gov/diseases/11902/congenital-myasthenic-syndrome xsd:anyURI {source="GARD:0011902"}
+
+[Term]
+id: Orphanet:98913
+name: Postsynaptic congenital myasthenic syndromes
+subset: ordo_etiological_subtype {source="Orphanet:98913"}
+synonym: "postsynaptic congenital myasthenic syndrome" EXACT [] {comment="preferred label from MONDO"}
+synonym: "postsynaptic congenital myasthenic syndromes" RELATED [Orphanet:98913]
+xref: ICD10:G70.2 {source="ORDO:98913/attributed", source="ORDO:98913/ntbt", source="Orphanet:98913"}
+xref: MONDO:0020344
+xref: OMIM:254300
+xref: OMIM:601462
+xref: OMIM:608930
+xref: OMIM:608931
+xref: OMIM:614198
+xref: OMIM:615120
+is_a: Orphanet:590 ! Congenital myasthenic syndromes
+property_value: exactMatch Orphanet:98913
+
+[Term]
+id: SIRA:0000001
+name: literature services
+
+[Term]
+id: UBERON:0001004
+name: respiratory system
+namespace: uberon
+def: "Functional system which consists of structures involved in respiration." [http://en.wikipedia.org/wiki/Respiratory_system, http://orcid.org/0000-0002-6601-2165]
+subset: efo_slim
+subset: functional_classification
+subset: pheno_slim
+subset: uberon_slim
+subset: vertebrate_core
+synonym: "apparatus respiratorius" EXACT []
+synonym: "apparatus respiratorius" RELATED [BTO:0000203]
+synonym: "Atmungssystem" RELATED [BTO:0000203]
+synonym: "respiratory system" EXACT []
+synonym: "systema respiratorium" RELATED LATIN [http://en.wikipedia.org/wiki/Respiratory_system]
+xref: AAO:0000541
+xref: BTO:0000203
+xref: CALOHA:TS-1319
+xref: EFO:0000804
+xref: EHDAA2:0001604
+xref: EHDAA:2203
+xref: EMAPA:16727
+xref: EV:0100036
+xref: FMA:7158
+xref: GAID:78
+xref: http://linkedlifedata.com/resource/umls/id/C0035237
+xref: http://www.snomedbrowser.com/Codes/Details/278197002
+xref: MA:0000327
+xref: MAT:0000030
+xref: MESH:D012137
+xref: MIAA:0000030
+xref: NCIT:C12779
+xref: OpenCyc:Mx4rvVjzFJwpEbGdrcN5Y29ycA
+xref: Respiratory:system
+xref: TAO:0000272
+xref: UMLS:C0035237 {source="ncithesaurus:Respiratory_System"}
+xref: VHOG:0000202
+xref: XAO:0000117
+xref: ZFA:0000272
+is_a: SIRA:0000001 ! literature services
+property_value: depicted:by http://upload.wikimedia.org/wikipedia/commons/5/5e/Respiratory_system_complete_en.svg xsd:anyURI
+property_value: external_definition "The anatomical system in which the exchange of oxygen and carbon dioxide between the organism and its environment.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000541", ontology="AAO", source="AAO:BJB"}
+property_value: homology_notes "There is no doubt that the primitive pattern of vertebrate air-breathing is the buccal pulse pump found in actinopterygian fishes.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000202", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.599 and Figure 18-23"}
+
+[Term]
+id: UBERON:0034874
+name: air in respiratory system
+namespace: uberon
+def: "Any portion of gas located in a part of the respiratory system that is composed primarily of air." [http://orcid.org/0000-0002-6601-2165]
+synonym: "respiratory air" EXACT [FMA:84581]
+synonym: "respiratory system air" EXACT []
+xref: FMA:84581
+is_a: UBERON:0034947 ! gas in respiratory system
+
+[Term]
+id: UBERON:0034947
+name: gas in respiratory system
+namespace: uberon
+def: "Any portion of gas located in a part of the respiratory system." [http://orcid.org/0000-0002-6601-2165]
+synonym: "respiratory gas" EXACT []
+synonym: "respiratory system gas" EXACT []
+is_a: SIRA:0000001 ! literature services
+
+[Typedef]
+id: BFO:0000066
+name: occurs in
+
+[Typedef]
+id: EFO:0000741
+name: has_tumor_type
+is_a: EFO:0000824 ! relationship
+inverse_of: EFO:0000742 ! is_tumor_of
+
+[Typedef]
+id: EFO:0000742
+name: is_tumor_of
+is_a: EFO:0000824 ! relationship
+
+[Typedef]
+id: EFO:0000784
+name: has_disease_location
+is_transitive: true
+is_a: located_in ! located_in
+inverse_of: EFO:0000785 ! is_location_of_disease
+
+[Typedef]
+id: EFO:0000785
+name: is_location_of_disease
+is_transitive: true
+is_a: location_of ! location_of
+
+[Typedef]
+id: EFO:0000794
+name: is_broader_than
+is_a: EFO:0000824 ! relationship
+
+[Typedef]
+id: EFO:0000824
+name: relationship
+
+[Typedef]
+id: EFO:0001697
+name: is_unit_of
+is_a: EFO:0000824 ! relationship
+inverse_of: EFO:0001698 ! has_unit
+
+[Typedef]
+id: EFO:0001698
+name: has_unit
+is_transitive: true
+is_a: EFO:0000824 ! relationship
+
+[Typedef]
+id: EFO:0006351
+name: has_about_it
+
+[Typedef]
+id: IAO:0000136
+name: is_about
+inverse_of: EFO:0006351 ! has_about_it
+
+[Typedef]
+id: OBI:0000293
+name: has_input
+property_value: EFO:URI http://www.ebi.ac.uk/efo/has_input xsd:string
+is_a: RO:0000057 ! has_participant
+inverse_of: OBI:0000295 ! is_input_of
+
+[Typedef]
+id: OBI:0000295
+name: is_input_of
+property_value: EFO:URI http://www.ebi.ac.uk/efo/is_input_of xsd:string
+is_a: RO:0000056 ! participates_in
+
+[Typedef]
+id: OBI:0000299
+name: has_output
+is_a: RO:0000057 ! has_participant
+
+[Typedef]
+id: RO:0000052
+name: inheres_in
+xref: RO:0000052
+property_value: EFO:URI http://www.ebi.ac.uk/efo/EFO_0000829 xsd:string
+is_a: RO:0002314 ! inheres in part of
+inverse_of: RO:0000053 ! bearer_of
+
+[Typedef]
+id: RO:0000053
+name: bearer_of
+def: "A relation between an entity and a dependent continuant; the reciprocal relation of inheres_in [GOC:cjm] example of usage: red eye bearer_of redness" []
+property_value: EFO:URI http://www.ebi.ac.uk/efo/EFO_0001377 xsd:string
+
+[Typedef]
+id: RO:0000056
+name: participates_in
+def: "Participates in is a primitive instance-level relation between a continuant and a process in which it participates. For example a scanner participates in a scanning process at some specific time." []
+inverse_of: RO:0000057 ! has_participant
+
+[Typedef]
+id: RO:0000057
+name: has_participant
+def: "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the A continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time." []
+
+[Typedef]
+id: RO:0000081
+name: role_of
+property_value: EFO:URI http://www.ebi.ac.uk/efo/is_role_of xsd:string
+is_a: RO:0000052 ! inheres_in
+
+[Typedef]
+id: RO:0000086
+name: has_quality
+property_value: EFO:URI http://www.ebi.ac.uk/efo/has_quality xsd:string
+is_a: RO:0000053 ! bearer_of
+
+[Typedef]
+id: RO:0001000
+name: derives_from
+def: "Derivation as a relation between instances. The temporal relation of derivation is more complex. Transformation, on the instance level, is just the relation of identity: each adult is identical to some child existing at some earlier time. Derivation on the instance-level is a relation holding between non-identicals. More precisely, it holds between distinct material continuants when one succeeds the other across a temporal divide in such a way that at least a biologically significant portion of the matter of the earlier continuant is inherited by the later. Thus we will have axioms to the effect that from c derives_from c1 we can infer that c and c1 are not identical and that there is some instant of time t such that c1 exists only prior to and c only subsequent to t. We will also be able to infer that the spatial region occupied by c as it begins to exist at t overlaps with the spatial region occupied by c1 as it ceases to exist in the same instant." []
+property_value: EFO:URI http://www.ebi.ac.uk/efo/derives_from xsd:string
+is_transitive: true
+inverse_of: RO:0001001 ! derives_into
+
+[Typedef]
+id: RO:0001001
+name: derives_into
+property_value: EFO:URI http://www.ebi.ac.uk/efo/derived_into xsd:string
+is_transitive: true
+
+[Typedef]
+id: RO:0001018
+name: contained_in
+def: "Containment obtains in each case between material and immaterial continuants, for instance: lung contained_in thoracic cavity; bladder contained_in pelvic cavity. Hence containment is not a transitive relation. If c part_of c1 at t then we have also, by our definition and by the axioms of mereology applied to spatial regions, c located_in c1 at t. Thus, many examples of instance-level location relations for continuants are in fact cases of instance-level parthood. For material continuants location and parthood coincide. Containment is location not involving parthood, and arises only where some immaterial continuant is involved. To understand this relation, we first define overlap for continuants as follows: c1 overlap c2 at t =def for some c, c part_of c1 at t and c part_of c2 at t." []
+property_value: EFO:URI http://www.ebi.ac.uk/efo/contained_in xsd:string
+is_a: RO:0000053 ! bearer_of
+inverse_of: contains ! contains
+
+[Typedef]
+id: RO:0002104
+name: has_plasma_membrane_part
+
+[Typedef]
+id: RO:0002200
+name: has phenotype
+def: "A relationship that holds between a biological entity and a phenotype. Here a phenotype is construed broadly as any kind of quality of an organism part, a collection of these qualities, or a change in quality or qualities (e.g. abnormally increased temperature). The subject of this relationship can be an organism (where the organism has the phenotype, i.e. the qualities inhere in parts of this organism), a genomic entity such as a gene or genotype (if modifications of the gene or the genotype causes the phenotype), or a condition such as a disease (such that if the condition inheres in an organism, then the organism has the phenotype)." []
+inverse_of: RO:0002201 ! phenotype of
+
+[Typedef]
+id: RO:0002201
+name: phenotype of
+subset: ro-eco
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+is_functional: true
+
+[Typedef]
+id: RO:0002211
+name: regulates
+
+[Typedef]
+id: RO:0002314
+name: inheres in part of
+def: "q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w." []
+property_value: IAO:0000116 "Because part_of is transitive, inheres in is a sub-relation of inheres in part of" xsd:string
+property_value: RO:0001900 RO:0001901
+holds_over_chain: RO:0000052 part_of
+is_a: RO:0002502 ! depends on
+
+[Typedef]
+id: RO:0002473
+name: composed primarily of
+def: "x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y." []
+property_value: IAO:0000112 "'otolith organ' SubClassOf 'composed primarily of' some 'calcium carbonate'" xsd:string
+property_value: RO:0001900 RO:0001901
+is_a: has_part ! has part
+
+[Typedef]
+id: RO:0002502
+name: depends on
+property_value: seeAlso BFO:0000169
+
+[Typedef]
+id: RO:0004027
+name: disease has inflammation site
+def: "A relationship between a disease and an anatomical entity where the disease is triggered by an inflammatory response to stimuli occurring in the anatomical entity" []
+is_a: EFO:0000784 ! has_disease_location
+
+[Typedef]
+id: RO:0004029
+name: disease has feature
+def: "A relationship between a disease and some feature of that disease, where the feature is either a phenotype or an isolated disease." []
+xref: RO:0004029
+
+[Typedef]
+id: axiom_lost_from_external_ontology
+name: axiom_lost_from_external_ontology
+namespace: uberon
+def: "A textual description of an axiom loss in this ontology compared to an external ontology." [https://orcid.org/0000-0002-6601-2165]
+comment: This annotation property may be replaced with an annotation property from an external ontology such as IAO
+xref: UBPROP:0000002
+is_metadata_tag: true
+
+[Typedef]
+id: capable_of
+name: capable of
+namespace: uberon
+xref: RO:0002215
+
+[Typedef]
+id: contains
+name: contains
+namespace: uberon
+xref: RO:0001019
+property_value: EFO:URI http://www.ebi.ac.uk/efo/contains xsd:string
+
+[Typedef]
+id: dc-creator
+name: creator
+namespace: uberon
+xref: http://purl.org/dc/elements/1.1/creator
+is_metadata_tag: true
+
+[Typedef]
+id: develops_from
+name: derives from/develops from
+name: develops_from
+namespace: uberon
+xref: RO:0002202
+holds_over_chain: part_of develops_from
+is_transitive: true
+transitive_over: part_of ! part_of
+
+[Typedef]
+id: external_definition
+name: external_definition
+namespace: uberon
+def: "\nAn alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class.\n" []
+def: "An alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class." [https://orcid.org/0000-0002-6601-2165]
+comment: \nThis annotation property may be replaced with an annotation property from an external ontology such as IAO\n
+comment: This annotation property may be replaced with an annotation property from an external ontology such as IAO
+xref: UBPROP:0000001
+is_metadata_tag: true
+
+[Typedef]
+id: has:flag
+name: has_flag
+def: "Relation to flag that an EFO class qualifies as an Atlas validation type" []
+property_value: EFO:URI http://www.ebi.ac.uk/efo/has_flag xsd:string
+is_obsolete: true
+
+[Typedef]
+id: has_modifier
+name: has modifier
+xref: RO:0002573
+
+[Typedef]
+id: has_part
+name: has part
+xref: BFO:0000051
+property_value: EFO:URI http://www.ebi.ac.uk/efo/has_part xsd:string
+is_transitive: true
+
+[Typedef]
+id: has_role
+name: has_role
+def: "A relation between a continuant C and a role R. The reciprocal relation of role_of." []
+property_value: EFO:URI http://www.ebi.ac.uk/efo/has_role xsd:string
+is_a: RO:0000053 ! bearer_of
+inverse_of: RO:0000081 ! role_of
+
+[Typedef]
+id: homology_notes
+name: homology_notes
+namespace: uberon
+def: "Notes on the homology status of this class." [https://orcid.org/0000-0002-6601-2165]
+comment: \nThis annotation property may be replaced with an annotation property from an external ontology such as IAO\n
+comment: This annotation property may be replaced with an annotation property from an external ontology such as IAO
+xref: UBPROP:0000003
+is_metadata_tag: true
+
+[Typedef]
+id: http://www.ebi.ac.uk/efo/is_executed_in
+name: is_executed_in
+is_transitive: true
+
+[Typedef]
+id: is_count_of
+name: is count of
+namespace: uberon
+xref: UBPROP:0000100
+is_metadata_tag: true
+
+[Typedef]
+id: located_in
+name: located_in
+namespace: uberon
+xref: RO:0001025
+property_value: EFO:URI http://www.ebi.ac.uk/efo/located_in xsd:string
+
+[Typedef]
+id: location_of
+name: location_of
+namespace: uberon
+xref: RO:0001015
+property_value: EFO:URI http://www.ebi.ac.uk/efo/location_of xsd:string
+inverse_of: located_in ! located_in
+
+[Typedef]
+id: only_in_taxon
+name: only in taxon
+name: only_in_taxon
+namespace: uberon
+def: "S only_in_taxon T iff: S SubClassOf in_taxon only T" [PMID:20973947]
+xref: RO:0002160
+
+[Typedef]
+id: part_of
+name: part of
+name: part_of
+namespace: external
+namespace: human_stages_ontology
+namespace: protein
+namespace: quality
+namespace: relationship
+namespace: uberon
+def: "a core relation that holds between a part and its whole" []
+def: "For continuants: C part_of C' if and only if: given any c that instantiates C at a time t, there is some c' such that c' instantiates C' at time t, and c *part_of* c' at t. For processes: P part_of P' if and only if: given any p that instantiates P at a time t, there is some p' such that p' instantiates P' at time t, and p *part_of* p' at t. (Here *part_of* is the instance-level part-relation.)" []
+comment: EFO_0000822
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+synonym: "part of" EXACT []
+xref: BFO:0000050
+xref: OBO_REL:part_of
+property_value: EFO:URI http://www.ebi.ac.uk/efo/part_of xsd:string
+property_value: IAO:0000111 "is part of" xsd:string
+property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
+property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
+property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
+property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
+property_value: IAO:0000118 "part_of" xsd:string
+property_value: RO:0001900 RO:0001901
+property_value: RO:0040042 BFO:0000002
+property_value: RO:0040042 BFO:0000003
+property_value: RO:0040042 BFO:0000004
+property_value: RO:0040042 BFO:0000017
+property_value: RO:0040042 BFO:0000019
+property_value: RO:0040042 BFO:0000020
+property_value: RO:0040042 BFO:0000031
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
+property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
+is_transitive: true
+inverse_of: has_part ! has part
+
+[Typedef]
+id: preceding_element_is
+name: preceding element is
+namespace: uberon
+def: "A property used in conjunction with repeated_element_number to indicate an axis and directionality along that axis. If P preceding_element_is R, and P is_count_of S, and X P N, and X' P N+1, then it follows that every X R some X', and the class expression [S and R some X' and inv(R) some X] is empty (i.e. X is followed by X', with no intermediates)" [https://orcid.org/0000-0002-6601-2165]
+xref: UBPROP:0000101
+is_metadata_tag: true
+
+[Typedef]
+id: produces
+name: produces
+namespace: uberon
+def: "a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix." []
+xref: RO:0003000
+
+[Typedef]
+id: qualifier
+name: has component
+comment: For use in recording has_part with a cardinality constraint.
+comment: placeholder relation to indicate normality/abnormality.
+xref: RO:0002180
+property_value: IAO:0000114 IAO:0000125
+property_value: RO:0001900 RO:0001901
+is_a: has_part ! has part
+
+[Typedef]
+id: related_to
+name: related to
+
+[Typedef]
+id: seeAlso
+name: see also
+namespace: uberon
+xref: http://www.w3.org/2000/01/rdf-schema#seeAlso
+is_metadata_tag: true
+
+[Typedef]
+id: towards
+name: towards
+xref: RO:0002503
+
